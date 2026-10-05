@@ -95,3 +95,7 @@ Antes de usar domínio próprio, troque `SEU-DOMINIO.com.br` em:
 8. contatos reais
 9. Microsoft Forms
 10. domínio próprio
+
+
+## Staging
+GitHub Pages ativado. URL de teste: https://raullosbuenos-prog.github.io/losbuenos-site/
