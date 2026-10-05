@@ -1,0 +1,1 @@
+window.LOSBUENOS_CONFIG={siteUrl:"https://SEU-DOMINIO.com.br",whatsapp:"",email:"",instagram:"",linkedin:"",microsoftFormsEmbedUrl:"",showreelYoutubeId:""};

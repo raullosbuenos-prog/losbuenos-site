@@ -1,0 +1,7 @@
+COLOQUE AQUI AS FONTES LICENCIADAS DA LOSBUENOS
+
+Arquivos esperados pelo CSS:
+TheNational-Bold.otf
+Geomanist-Regular.otf
+
+As fontes não estão incluídas neste repositório.
