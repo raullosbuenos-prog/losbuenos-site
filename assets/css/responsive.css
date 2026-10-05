@@ -16,3 +16,37 @@
   .dialog-copy{padding:36px 24px}
   .about-married{margin-top:34px}
 }
+
+/* Mobile header/nav hardening */
+@media(max-width:980px){
+  .site-header{height:76px}
+  .brand{height:76px;display:flex;align-items:center}
+  .brand-logo{width:auto;max-width:104px;max-height:60px}
+  .main-nav{
+    visibility:hidden;
+    opacity:0;
+    pointer-events:none;
+    transform:translateY(-18px);
+    z-index:40;
+    transition:opacity .28s ease,transform .38s var(--ease),visibility 0s linear .38s;
+  }
+  .main-nav.open{
+    visibility:visible;
+    opacity:1;
+    pointer-events:auto;
+    transform:none;
+    transition:opacity .28s ease,transform .38s var(--ease),visibility 0s;
+  }
+  .main-nav .nav-cta{
+    font-family:"Geomanist",Arial,sans-serif;
+    font-size:1rem;
+    margin-top:14px;
+  }
+  .menu-toggle{z-index:60}
+}
+@media(max-width:640px){
+  .site-header{height:70px}
+  .brand{height:70px}
+  .brand-logo{max-width:92px;max-height:52px}
+  .hero{padding-top:96px}
+}
