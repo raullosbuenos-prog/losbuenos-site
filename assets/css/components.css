@@ -19,3 +19,35 @@
 .testimonial-card strong,.testimonial-card span{display:block}.testimonial-card span{color:#777;font-size:.8rem}
 .reel-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .reel-links a{padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:#aaa;font-size:.78rem}
+
+.project-logo-card{position:relative;overflow:hidden}
+.project-card-button{width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer}
+.project-logo-visual{position:relative;min-height:330px;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);background:#0d0d0d}
+.project-logo-visual::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(5,5,5,.68),rgba(5,5,5,.82)),var(--project-bg);background-size:cover;background-position:center;filter:grayscale(1);transform:scale(1.03);transition:transform .6s var(--ease),filter .4s}
+.project-logo-card:hover .project-logo-visual::before{transform:scale(1.08);filter:grayscale(.4)}
+.project-logo-visual::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(255,255,255,.08),transparent 42%)}
+.project-logo{position:relative;z-index:2;max-width:42%;max-height:110px;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 12px 30px rgba(0,0,0,.35))}
+.project-logo.light-logo{filter:brightness(0) invert(1) drop-shadow(0 12px 30px rgba(0,0,0,.35))}
+.project-card.big .project-logo-visual{min-height:680px}
+.project-card.wide .project-logo-visual{min-height:470px}
+.project-open{position:absolute;z-index:3;right:18px;bottom:18px;padding:7px 10px;border:1px solid var(--line2);border-radius:999px;background:rgba(0,0,0,.56);font-size:.7rem;color:#cfcfcf}
+.client-marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0}
+.client-track{display:flex;gap:74px;align-items:center;width:max-content;animation:clientMarquee 28s linear infinite}
+.client-track img{width:130px;height:54px;object-fit:contain;filter:grayscale(1) brightness(1.7);opacity:.72}
+@keyframes clientMarquee{to{transform:translateX(-50%)}}
+.project-dialog{width:min(1060px,calc(100vw - 32px));border:1px solid var(--line2);border-radius:24px;background:#0b0b0b;color:#fff;padding:0;box-shadow:0 40px 120px rgba(0,0,0,.65)}
+.project-dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(8px)}
+.dialog-close{position:absolute;z-index:5;right:18px;top:18px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line2);background:rgba(0,0,0,.65);color:#fff;cursor:pointer}
+.dialog-grid{display:grid;grid-template-columns:1.15fr .85fr;min-height:560px}
+.dialog-media{width:100%;height:100%;min-height:560px;object-fit:cover}
+.dialog-copy{padding:56px 40px;display:flex;flex-direction:column;justify-content:center}
+.dialog-copy .project-logo{max-width:180px;max-height:80px;margin-bottom:30px}
+.dialog-copy p{color:#999}
+.dialog-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.dialog-links a{padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:#bbb;font-size:.78rem}
+.audio-card{grid-template-columns:54px 48px 1fr auto}
+.audio-avatar{width:54px;height:54px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.about-married{width:var(--shell);margin:48px auto 0;text-align:center;font-family:"The National";font-size:clamp(1.7rem,3vw,3.4rem);line-height:1;color:#d9d9d9}
+.instagram-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.instagram-embed-card{display:flex;justify-content:center;min-width:0}
+.instagram-embed-card .instagram-media{margin:0 auto!important;min-width:326px!important;width:100%!important;max-width:540px!important}
