@@ -31,9 +31,15 @@
 .project-card.big .project-logo-visual{min-height:680px}
 .project-card.wide .project-logo-visual{min-height:470px}
 .project-open{position:absolute;z-index:3;right:18px;bottom:18px;padding:7px 10px;border:1px solid var(--line2);border-radius:999px;background:rgba(0,0,0,.56);font-size:.7rem;color:#cfcfcf}
-.client-marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0}
-.client-track{display:flex;gap:74px;align-items:center;width:max-content;animation:clientMarquee 28s linear infinite}
-.client-track img{width:130px;height:54px;object-fit:contain;filter:grayscale(1) brightness(1.7);opacity:.72}
+.client-marquee{position:relative;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;background:rgba(0,0,0,.16)}
+.client-marquee::before,.client-marquee::after{content:"";position:absolute;z-index:2;top:0;bottom:0;width:min(12vw,150px);pointer-events:none}
+.client-marquee::before{left:0;background:linear-gradient(90deg,var(--ink),transparent)}
+.client-marquee::after{right:0;background:linear-gradient(-90deg,var(--ink),transparent)}
+.client-track{display:flex;width:max-content;align-items:center;animation:clientMarquee 48s linear infinite;will-change:transform}
+.client-sequence{display:flex;align-items:center;gap:74px;padding-right:74px}
+.client-sequence img{display:block;width:auto;min-width:78px;max-width:180px;height:58px;object-fit:contain;filter:brightness(0) invert(1);opacity:.72;transition:opacity .2s,transform .2s}
+.client-sequence img:hover{opacity:1;transform:scale(1.04)}
+.client-marquee:hover .client-track{animation-play-state:paused}
 @keyframes clientMarquee{to{transform:translateX(-50%)}}
 .project-dialog{width:min(1060px,calc(100vw - 32px));border:1px solid var(--line2);border-radius:24px;background:#0b0b0b;color:#fff;padding:0;box-shadow:0 40px 120px rgba(0,0,0,.65)}
 .project-dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(8px)}
