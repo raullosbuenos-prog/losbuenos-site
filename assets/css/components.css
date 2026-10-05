@@ -51,3 +51,6 @@
 .instagram-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
 .instagram-embed-card{display:flex;justify-content:center;min-width:0}
 .instagram-embed-card .instagram-media{margin:0 auto!important;min-width:326px!important;width:100%!important;max-width:540px!important}
+
+.project-logo{box-sizing:content-box;background:rgba(255,255,255,.92);padding:18px 24px;border-radius:14px}
+.project-logo.light-logo{background:rgba(255,255,255,.92);filter:drop-shadow(0 12px 30px rgba(0,0,0,.35))}
