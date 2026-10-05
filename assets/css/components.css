@@ -61,3 +61,24 @@
 .media-placeholder[data-youtube-showreel]{position:relative;padding:0;overflow:hidden}
 .media-placeholder[data-youtube-showreel] iframe{position:absolute;left:50%;top:50%;width:100%;height:112.5%;max-width:none;border:0;transform:translate(-50%,-50%);display:block}
 .instagram-direct{width:100%;max-width:540px;aspect-ratio:9/16;border:0;border-radius:12px;background:#fff;display:block}
+
+/* Header logo visibility + Instagram fallback */
+.brand{position:relative;z-index:70;flex:0 0 auto;min-width:104px}
+.brand-logo{display:block!important;visibility:visible!important;opacity:.96!important;filter:brightness(0) invert(1);max-width:118px;max-height:64px}
+.reel-fallback{
+  position:relative;
+  width:100%;
+  max-width:540px;
+  aspect-ratio:9/16;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#0d0d0d;
+}
+.reel-fallback img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.15) brightness(.78)}
+.reel-fallback::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.08) 60%)}
+.reel-fallback-content{position:absolute;z-index:2;left:24px;right:24px;bottom:24px}
+.reel-fallback-content .eyebrow{margin-bottom:9px}
+.reel-fallback-content h3{margin-bottom:16px}
+.reel-fallback-content p{color:#c8c8c8;font-size:.92rem;max-width:360px}
+.reel-fallback-content .btn{margin-top:8px}
