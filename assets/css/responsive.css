@@ -1,1 +1,18 @@
 @media(max-width:980px){:root{--shell:min(100% - 36px,1320px)}.section{padding-block:100px}.main-nav{position:fixed;inset:0;background:rgba(5,5,5,.97);backdrop-filter:blur(20px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:90px 9vw;gap:20px;transform:translateY(-105%);transition:transform .5s var(--ease);z-index:-1}.main-nav.open{transform:none}.main-nav>a{font-family:"The National";font-size:clamp(2.2rem,8vw,4rem)}.menu-toggle{display:block;position:relative;z-index:2}.triptych,.method-grid{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr}.project-card.big,.project-card.wide{grid-row:auto;grid-column:auto}.project-card.big .project-media,.project-card.wide .project-media,.project-media{min-height:480px}.people-grid,.idea-grid,.quote-grid,.audio-grid,.video-cards,.contact-grid{grid-template-columns:1fr}.backstage-grid{grid-template-columns:repeat(2,1fr)}.service-list a{grid-template-columns:40px 1fr 30px}.service-list em{display:none}.page-intro,.service-detail-grid,.case-section{grid-template-columns:1fr;gap:24px}.content-row{grid-template-columns:1fr}.case-gallery{grid-template-columns:1fr}.case-gallery .wide{grid-column:auto}.idea-list{grid-template-columns:1fr}}@media(max-width:640px){:root{--shell:calc(100vw - 28px)}.site-header{height:70px}.site-header.is-scrolled{padding-inline:14px}.hero{padding-top:110px;min-height:94svh}h1{font-size:clamp(3rem,16vw,5.6rem)}h2{font-size:clamp(2.5rem,12vw,4.4rem)}.actions{flex-direction:column;align-items:flex-start}.inline{display:block}.inline .text-link{margin-top:20px}.project-card.big .project-media,.project-card.wide .project-media,.project-media{min-height:360px}.person-photo{min-height:420px}.backstage-grid{grid-template-columns:1fr;grid-auto-rows:300px}.backstage-grid .tall,.backstage-grid .wide{grid-row:auto;grid-column:auto}.audio-card{grid-template-columns:52px 1fr}.audio-card>div:last-child{grid-column:1/-1}.final-cta{padding:36px 24px}.site-footer{grid-template-columns:1fr}.footer-meta{grid-column:auto}.case-gallery .placeholder{min-height:360px}}
+@media(max-width:980px){
+  .project-card.big .project-logo-visual,.project-card.wide .project-logo-visual,.project-logo-visual{min-height:480px}
+  .dialog-grid{grid-template-columns:1fr}
+  .dialog-media{min-height:380px;max-height:52vh}
+  .client-track{gap:48px}
+  .instagram-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .project-card.big .project-logo-visual,.project-card.wide .project-logo-visual,.project-logo-visual{min-height:360px}
+  .project-logo{max-width:56%}
+  .audio-card{grid-template-columns:48px 44px 1fr}
+  .audio-card>div:last-child{grid-column:auto}
+  .audio-card .waveform{grid-column:1/-1}
+  .audio-avatar{width:48px;height:48px}
+  .dialog-copy{padding:36px 24px}
+  .about-married{margin-top:34px}
+}
