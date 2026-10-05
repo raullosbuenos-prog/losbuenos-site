@@ -10,14 +10,14 @@
   <a class="text-link" href="projetos/">Ver todos ↗</a>
 </div>
 <div class="project-grid">
-  <a class="project-card project-logo-card big" href="projetos/lis/" data-reveal style="--project-bg:url('assets/images/cases/lis/hero.jpg')">
-    <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/lis/logo.svg" alt="Lis Semijoias"><span class="project-open">Ver case ↗</span></div>
+  <button class="project-card project-logo-card project-card-button big" type="button" data-project-dialog="project-lis" data-reveal style="--project-bg:url('assets/images/cases/lis/hero.jpg')">
+    <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/lis/logo.svg" alt="Lis Semijoias"><span class="project-open">Abrir seleção ↗</span></div>
     <div class="project-info"><small>Estratégia • Social • Performance</small><h3>Lis Semijoias</h3></div>
-  </a>
-  <a class="project-card project-logo-card" href="projetos/fabreck/" data-reveal style="--project-bg:url('assets/images/cases/fabreck/hero.jpg')">
-    <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/fabreck/logo.svg" alt="Fabreck"><span class="project-open">Ver case ↗</span></div>
+  </button>
+  <button class="project-card project-logo-card project-card-button" type="button" data-project-dialog="project-fabreck" data-reveal style="--project-bg:url('assets/images/cases/fabreck/hero.jpg')">
+    <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/fabreck/logo.svg" alt="Fabreck"><span class="project-open">Abrir seleção ↗</span></div>
     <div class="project-info"><small>Reposicionamento • Conteúdo</small><h3>Fabreck</h3></div>
-  </a>
+  </button>
   <button class="project-card project-logo-card project-card-button" type="button" data-project-dialog="project-rei" data-reveal style="--project-bg:url('assets/images/cases/rei-da-defender/hero.webp')">
     <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/rei-da-defender/logo.png" alt="Rei da Defender"><span class="project-open">Abrir seleção ↗</span></div>
     <div class="project-info"><small>Conteúdo • Audiovisual</small><h3>Rei da Defender</h3></div>
@@ -26,10 +26,10 @@
     <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/liora/logo.svg" alt="Liora"><span class="project-open">Abrir seleção ↗</span></div>
     <div class="project-info"><small>Branding • Direção</small><h3>Liora</h3></div>
   </button>
-  <a class="project-card project-logo-card wide" href="projetos/dr-anderson/" data-reveal style="--project-bg:url('assets/images/cases/dr-anderson/hero.jpg')">
-    <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/dr-anderson/logo.svg" alt="Dr. Anderson Kusumoto"><span class="project-open">Ver projeto ↗</span></div>
+  <button class="project-card project-logo-card project-card-button wide" type="button" data-project-dialog="project-anderson" data-reveal style="--project-bg:url('assets/images/cases/dr-anderson/hero.jpg')">
+    <div class="project-logo-visual"><img class="project-logo" src="assets/images/cases/dr-anderson/logo.svg" alt="Dr. Anderson Kusumoto"><span class="project-open">Abrir seleção ↗</span></div>
     <div class="project-info"><small>Posicionamento • Social • Performance</small><h3>Dr. Anderson Kusumoto</h3></div>
-  </a>
+  </button>
 </div>
 </section>
 <section class="client-marquee" aria-label="Clientes selecionados">
@@ -121,13 +121,35 @@
 </div>
 </section>
 <section class="shell section"><div class="final-cta" data-reveal><p class="eyebrow">Começar</p><h2>Tem alguma coisa no seu marketing que não está encaixando?</h2><p>Talvez a gente consiga descobrir o quê.</p><a class="btn primary" href="contato/">Conte pra gente</a></div></section>
+<dialog class="project-dialog" id="project-lis">
+<button class="dialog-close" type="button" data-dialog-close aria-label="Fechar">×</button>
+<div class="dialog-grid">
+  <img class="dialog-media" src="assets/images/cases/lis/hero.jpg" alt="Lis Semijoias">
+  <div class="dialog-copy">
+    <img class="project-logo" src="assets/images/cases/lis/logo.svg" alt="Lis Semijoias">
+    <p>Estratégia de conteúdo, crescimento, mídia e liveshops trabalhando como uma jornada única de venda.</p>
+    <div class="dialog-links"><a href="projetos/lis/">Ver case completo ↗</a></div>
+  </div>
+</div>
+</dialog>
+<dialog class="project-dialog" id="project-fabreck">
+<button class="dialog-close" type="button" data-dialog-close aria-label="Fechar">×</button>
+<div class="dialog-grid">
+  <img class="dialog-media" src="assets/images/cases/fabreck/hero.jpg" alt="Fabreck">
+  <div class="dialog-copy">
+    <img class="project-logo" src="assets/images/cases/fabreck/logo.svg" alt="Fabreck">
+    <p>Reposicionamento, conteúdo, produto e comunidade para aproximar lojistas e consumidores sem perder unidade de marca.</p>
+    <div class="dialog-links"><a href="projetos/fabreck/">Ver case completo ↗</a></div>
+  </div>
+</div>
+</dialog>
 <dialog class="project-dialog" id="project-rei">
 <button class="dialog-close" type="button" data-dialog-close aria-label="Fechar">×</button>
 <div class="dialog-grid">
   <img class="dialog-media" src="assets/images/cases/rei-da-defender/hero.webp" alt="Rei da Defender">
   <div class="dialog-copy">
     <img class="project-logo" src="assets/images/cases/rei-da-defender/logo.png" alt="Rei da Defender">
-    <p>Uma seleção de conteúdo desenvolvido para a marca. Aqui a ideia é mostrar trabalho sem transformar todo projeto em um case longo.</p>
+    <p>Uma seleção de conteúdo desenvolvido para a marca.</p>
     <div class="dialog-links">
       <a href="https://www.instagram.com/p/Dd6xFnohzwl/" target="_blank" rel="noopener">Post 01 ↗</a>
       <a href="https://www.instagram.com/p/DctTtWHKm40/" target="_blank" rel="noopener">Post 02 ↗</a>
@@ -142,7 +164,22 @@
   <img class="dialog-media" src="assets/images/cases/liora/hero.png" alt="Projeto Liora">
   <div class="dialog-copy">
     <img class="project-logo" src="assets/images/cases/liora/logo.svg" alt="Liora">
-    <p>Uma amostra visual do projeto de marca e direção criativa. Se ele crescer para um case completo depois, a estrutura já está preparada.</p>
+    <p>Uma amostra visual do projeto de marca e direção criativa.</p>
+  </div>
+</div>
+</dialog>
+<dialog class="project-dialog" id="project-anderson">
+<button class="dialog-close" type="button" data-dialog-close aria-label="Fechar">×</button>
+<div class="dialog-grid">
+  <img class="dialog-media" src="assets/images/cases/dr-anderson/hero.jpg" alt="Dr. Anderson Kusumoto">
+  <div class="dialog-copy">
+    <img class="project-logo" src="assets/images/cases/dr-anderson/logo.svg" alt="Dr. Anderson Kusumoto">
+    <p>Social media, performance, website e comunicação com foco em geração de demanda e autoridade.</p>
+    <div class="dialog-links">
+      <a href="projetos/dr-anderson/">Ver projeto completo ↗</a>
+      <a href="https://www.instagram.com/dr.andersonkusumoto/reel/DEXwhssxugC/" target="_blank" rel="noopener">Reel 01 ↗</a>
+      <a href="https://www.instagram.com/dr.andersonkusumoto/reel/DXptUZzgvB2/" target="_blank" rel="noopener">Reel 02 ↗</a>
+    </div>
   </div>
 </div>
 </dialog></main><footer class="site-footer shell"><div><strong>LosBuenos</strong><p>Branding, marketing e direção criativa.</p></div><div class="footer-links"><a href="projetos/">Projetos</a><a href="sobre/">Sobre</a><a href="contato/">Contato</a></div><div class="footer-meta">© <span data-year></span> LosBuenos • Londrina, PR</div></footer>
