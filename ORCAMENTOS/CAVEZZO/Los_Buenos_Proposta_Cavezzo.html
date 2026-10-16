@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Los Buenos × Cavezzo Proposta Comercial</title><style>
+
+/* =========================================
+   PORTFÓLIO LOS BUENOS — CAVEZZO
+   ========================================= */
+
+#cv-proposal #cv-portfolio .cv-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 42px 20px;
+  align-items: stretch;
+  margin-top: 48px;
+}
+
+#cv-proposal #cv-portfolio .cv-work {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+}
+
+#cv-proposal #cv-portfolio .cv-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #1b1b1b;
+  border: 1px solid #353535;
+}
+
+#cv-proposal #cv-portfolio .cv-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter .35s ease, transform .5s ease;
+}
+
+/* Cor aparece no hover apenas na imagem */
+#cv-proposal #cv-portfolio .cv-work:hover .cv-thumb img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+#cv-proposal #cv-portfolio .cv-thumb-index {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 5px 9px;
+  background: rgba(0, 0, 0, .82);
+  color: #fff;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+#cv-proposal #cv-portfolio .cv-work-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 20px 0;
+  min-height: 120px;
+}
+
+#cv-proposal #cv-portfolio .cv-work-meta h3 {
+  margin: 0;
+  font-family: "Geomanist", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #f4f4f4;
+}
+
+#cv-proposal #cv-portfolio .cv-handle {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: .07em;
+  color: #999;
+}
+
+#cv-proposal #cv-portfolio .cv-video-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 47px;
+  margin-top: auto;
+  padding: 12px 16px;
+  background: transparent;
+  border: 1px solid #ededed;
+  color: #fff;
+  font-family: "Geomanist", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-decoration: none;
+  transition: background .2s ease, color .2s ease;
+}
+
+#cv-proposal #cv-portfolio .cv-video-btn:hover {
+  background: #f4f4f4;
+  color: #080808;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  #cv-proposal #cv-portfolio .cv-portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px 18px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+  #cv-proposal #cv-portfolio .cv-portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  #cv-proposal #cv-portfolio .cv-thumb {
+    aspect-ratio: 16 / 9;
+  }
+
+  #cv-proposal #cv-portfolio .cv-work-meta {
+    min-height: auto;
+  }
+}
+
+
+@font-face {
+ font-family: "The National";
+ src: url("./TheNational.otf") format("opentype");
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "Geomanist";
+ src: url("./Geomanist.otf") format("opentype");
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "Alakite Signature";
+ src: url("./AlakiteSignature.otf") format("opentype");
+ font-display: swap;
+}
+:root{--cv-black:#080808;--cv-ink:#101010;--cv-panel:#121212;--cv-panel2:#181818;--cv-line:#353535;--cv-white:#f6f6f6;--cv-gray:#a7a7a7;--cv-soft:#727272}
+*{box-sizing:border-box}
+body{margin:0}
+#cv-proposal{background:var(--cv-black);color:var(--cv-white);font-family:"Geomanist","Helvetica Neue",Arial,sans-serif;font-size:14px;line-height:1.7;overflow:hidden}
+#cv-proposal *{box-sizing:border-box}
+#cv-proposal a{text-decoration:none;color:inherit}
+#cv-proposal button{font:inherit}
+#cv-proposal .cv-wrap{width:min(1140px,100%);margin:auto;padding-left:clamp(23px,5vw,65px);padding-right:clamp(23px,5vw,65px);letter-spacing:5}
+#cv-proposal .cv-title{font-family:"The National","Arial Narrow",Impact,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:1;line-height:1}
+#cv-proposal .cv-kicker{font-size:10px;font-weight:700;letter-spacing:.23em;text-transform:uppercase}
+#cv-proposal .cv-micro{font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+#cv-proposal .cv-muted{color:var(--cv-gray)}
+#cv-proposal .cv-rule{height:1px;background:#353535}
+#cv-proposal .cv-section{padding:clamp(76px,9vw,122px) 0}
+#cv-proposal .cv-section-head{display:grid;grid-template-columns:80px 1fr;gap:22px;margin-bottom:50px}
+#cv-proposal .cv-section-num{font-family:"The National",Impact,sans-serif;font-size:20px;border-top:1px solid #666;padding-top:12px}
+#cv-proposal .cv-section-head h2{font-size:clamp(42px,7vw,84px);margin:14px 0 0;max-width:850px}
+#cv-proposal .cv-lead{font-size:clamp(16px,2vw,21px);line-height:1.75;color:#d0d0d0;max-width:800px}
+#cv-proposal .cv-noise{position:relative;isolation:isolate}
+#cv-proposal .cv-noise:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.8;background-image:radial-gradient(circle,#b63a34 .6px,transparent 1.1px),radial-gradient(circle,#2b9d75 .65px,transparent 1.1px),radial-gradient(circle,#3562ac .6px,transparent 1.1px),radial-gradient(circle,#a48e32 .55px,transparent 1.1px),radial-gradient(circle,#a04480 .55px,transparent 1.1px);background-size:43px 47px,49px 41px,53px 59px,59px 47px,47px 61px;background-position:2px 5px,18px 24px,29px 12px,5px 32px,35px 44px}
+#cv-proposal .cv-hero{background:#050505;min-height:660px;display:flex;flex-direction:column}
+#cv-proposal .cv-topbar{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:27px 0;border-bottom:1px solid #333}
+#cv-proposal .cv-logo{font-family:"The National",Impact,"Arial Narrow",sans-serif;font-size:29px;font-weight:900;line-height:.8;letter-spacing:-.06em}
+#cv-proposal .cv-logo span{display:block;font-size:10px;font-family:"Geomanist",Arial,sans-serif;font-weight:400;letter-spacing:.34em;margin-top:10px}
+#cv-proposal .cv-hero-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:85px;padding-bottom:75px}
+#cv-proposal .cv-hero-body .cv-kicker{color:#ddd}
+#cv-proposal .cv-hero h1{font-size:clamp(88px,16vw,198px);margin:18px 0 18px;letter-spacing:1}
+#cv-proposal .cv-hero-statement{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:end;border-top:1px solid #555;padding-top:24px;margin-top:12px}
+#cv-proposal .cv-hero-statement p{font-size:clamp(17px,2.4vw,26px);line-height:1.35;max-width:450px;margin:0}
+#cv-proposal .cv-signature{font-family:"Alacarte Signature","Brush Script MT",cursive;font-weight:400;font-size:clamp(29px,5vw,56px);line-height:1.2;text-align:right;color:#e7e7e7}
+#cv-proposal .cv-hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0;border-top:1px solid #555;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#c4c4c4}
+#cv-proposal .cv-white-band{background:#f4f4f4;color:#080808;display:flex;align-items:center;min-height:68px}
+#cv-proposal .cv-white-band .cv-wrap{display:flex;justify-content:space-between;align-items:center;gap:15px}
+#cv-proposal .cv-white-band strong{font-family:"The National",Impact,sans-serif;font-size:23px;letter-spacing:-.04em}
+#cv-proposal .cv-white-band span{font-size:11px;letter-spacing:.17em;text-transform:uppercase}
+#cv-proposal .cv-diagnosis{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#333;border:1px solid #333;margin-top:48px}
+#cv-proposal .cv-diag{background:#0b0b0b;padding:clamp(25px,4vw,40px);min-height:215px}
+#cv-proposal .cv-diag .cv-micro{color:#a6a6a6}
+#cv-proposal .cv-diag h3{font-size:clamp(20px,2.6vw,30px);line-height:1.2;font-weight:600;letter-spacing:-.04em;margin:25px 0 12px}
+#cv-proposal .cv-diag p{color:#b2b2b2;font-size:13px;line-height:1.8;margin:0;max-width:420px}
+#cv-proposal .cv-statement{font-family:"The National",Impact,sans-serif;font-size:clamp(32px,5.4vw,67px);line-height:1.1;letter-spacing:1;text-transform:uppercase;border-top:1px solid #666;border-bottom:1px solid #666;margin-top:60px;padding:32px 0}
+#cv-proposal .cv-statement span{color:#898989}
+#cv-proposal .cv-method{background:#f1f1f1;color:#080808}
+#cv-proposal .cv-method .cv-section-num{border-color:#888}
+#cv-proposal .cv-method .cv-lead{color:#333}
+#cv-proposal .cv-method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#bbb;border:1px solid #bbb;margin-top:45px}
+#cv-proposal .cv-method-item{background:#f1f1f1;padding:30px 23px;min-height:255px}
+#cv-proposal .cv-method-item .cv-micro{color:#555}
+#cv-proposal .cv-method-item h3{font-size:23px;letter-spacing:-.04em;line-height:1.2;margin:45px 0 12px}
+#cv-proposal .cv-method-item p{font-size:12px;color:#555;line-height:1.8}
+#cv-proposal .cv-flow{display:flex;justify-content:space-between;gap:10px;margin-top:45px;border-top:1px solid #999;padding-top:18px}
+#cv-proposal .cv-flow span{font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+#cv-proposal .cv-portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:45px}
+#cv-proposal .cv-work{min-width:0;display:flex;flex-direction:column}
+#cv-proposal .cv-thumb{aspect-ratio:16/10;border:1px solid #424242;background:#191919;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+#cv-proposal .cv-thumb img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1)}
+#cv-proposal .cv-thumb .cv-thumb-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,#1b1b1b 0px,#1b1b1b 1px,#161616 1px,#161616 9px);color:#696969}
+#cv-proposal .cv-thumb-placeholder strong{font-family:"The National",Impact,sans-serif;font-size:clamp(38px,5vw,66px);line-height:1;letter-spacing:-.06em}
+#cv-proposal .cv-thumb-placeholder span{font-size:9px;letter-spacing:.2em;margin-top:10px}
+#cv-proposal .cv-thumb-index{position:absolute;top:14px;left:14px;font-size:10px;letter-spacing:.14em;color:#fff;background:rgba(0,0,0,.65);padding:5px 9px}
+#cv-proposal .cv-work-meta{padding:21px 0 17px;min-height:110px}
+#cv-proposal .cv-work-meta h3{font-size:17px;line-height:1.35;font-weight:600;letter-spacing:-.025em;margin:0 0 9px;min-height:24px}
+#cv-proposal .cv-work-meta .cv-handle{font-size:11px;letter-spacing:.06em;color:#aaa;margin:0}
+#cv-proposal .cv-video-btn{margin-top:auto;border:1px solid #f0f0f0;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;background:transparent;color:#fff;cursor:pointer;min-height:47px;width:100%}
+#cv-proposal .cv-video-btn:hover{background:#f4f4f4;color:#050505}
+#cv-proposal .cv-portfolio-note{font-size:11px;color:#929292;margin-top:28px;line-height:1.8}
+#cv-proposal .cv-gift{border-top:1px solid #555}
+#cv-proposal .cv-gift-tag{display:flex;justify-content:space-between;gap:20px;align-items:center;background:#f3f3f3;color:#0a0a0a;padding:17px 23px;margin-bottom:62px}
+#cv-proposal .cv-gift-tag strong{font-size:11px;letter-spacing:.17em;text-transform:uppercase}
+#cv-proposal .cv-gift-tag span{font-size:11px;color:#444}
+#cv-proposal .cv-big-idea{display:grid;grid-template-columns:1fr 1fr;gap:35px;border:1px solid #6a6a6a;padding:clamp(25px,4vw,45px);margin:40px 0}
+#cv-proposal .cv-big-idea h3{font-family:"The National",Impact,sans-serif;font-size:clamp(40px,6vw,76px);line-height:1.02;text-transform:uppercase;letter-spacing:1 ;margin:12px 0}
+#cv-proposal .cv-big-idea p{color:#c6c6c6;font-size:15px;line-height:1.9;align-self:end}
+#cv-proposal .cv-targets{display:grid;grid-template-columns:7fr 3fr;border:1px solid #666;margin:38px 0 70px}
+#cv-proposal .cv-targets>div{padding:25px 30px}
+#cv-proposal .cv-targets>div+div{border-left:1px solid #666}
+#cv-proposal .cv-targets strong{font-family:"The National",Impact,sans-serif;font-size:clamp(54px,8vw,92px);letter-spacing:1;line-height:1}
+#cv-proposal .cv-targets p{font-size:12px;color:#c6c6c6;max-width:400px;margin:9px 0 0}
+#cv-proposal .cv-subhead{font-family:"The National",Impact,sans-serif;font-size:clamp(31px,4vw,52px);letter-spacing:1;text-transform:uppercase;line-height:1.1;margin:0 0 28px}
+#cv-proposal .cv-series{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+#cv-proposal .cv-series-card{border:1px solid #484848;padding:26px;min-height:175px}
+#cv-proposal .cv-series-card span{font-size:10px;color:#a6a6a6;letter-spacing:.15em}
+#cv-proposal .cv-series-card h4{font-size:21px;letter-spacing:-.03em;line-height:1.3;margin:18px 0 9px}
+#cv-proposal .cv-series-card p{font-size:12px;color:#b7b7b7;line-height:1.8;margin:0}
+#cv-proposal .cv-timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
+#cv-proposal .cv-timeline>div{border-top:1px solid #666;padding:19px 10px 0 0}
+#cv-proposal .cv-timeline strong{font-family:"The National",Impact,sans-serif;font-size:31px;letter-spacing:-.04em}
+#cv-proposal .cv-timeline p{font-size:12px;color:#bcbcbc;line-height:1.8}
+#cv-proposal .cv-pricing{background:#111}
+#cv-proposal .cv-plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:52px;align-items:stretch}
+#cv-proposal .cv-plan{border:1px solid #5c5c5c;display:flex;flex-direction:column;min-width:0;background:#0b0b0b}
+#cv-proposal .cv-plan.cv-featured{background:#f4f4f4;color:#080808;border-color:#f4f4f4}
+#cv-proposal .cv-plan-top{padding:29px 23px 24px;border-bottom:1px solid #555;min-height:275px}
+#cv-proposal .cv-featured .cv-plan-top{border-color:#bbb}
+#cv-proposal .cv-plan-top .cv-micro{color:#aaa}
+#cv-proposal .cv-featured .cv-plan-top .cv-micro{color:#555}
+#cv-proposal .cv-plan h3{font-family:"The National",Impact,sans-serif;font-size:clamp(28px,3.3vw,40px);line-height:1.04;text-transform:uppercase;letter-spacing:1;margin:20px 0 23px;min-height:80px}
+#cv-proposal .cv-price{font-family:"The National",Impact,sans-serif;font-size:clamp(37px,4vw,53px);font-weight:800;letter-spacing:1;line-height:1}
+#cv-proposal .cv-price span{font-family:"Geomanist",Arial,sans-serif;font-size:12px;font-weight:400;letter-spacing:0;color:#aaa}
+#cv-proposal .cv-featured .cv-price span{color:#666}
+#cv-proposal .cv-plan-top p{font-size:12px;color:#aaa;line-height:1.65;margin:17px 0 0}
+#cv-proposal .cv-featured .cv-plan-top p{color:#555}
+#cv-proposal .cv-plan-body{padding:23px;flex:1}
+#cv-proposal .cv-plan-body .cv-micro{color:#aaa}
+#cv-proposal .cv-featured .cv-plan-body .cv-micro{color:#555}
+#cv-proposal .cv-plan ul{padding:0;list-style:none;margin:17px 0 0}
+#cv-proposal .cv-plan li{padding:10px 0 10px 18px;border-bottom:1px solid #333;font-size:12px;line-height:1.65;position:relative}
+#cv-proposal .cv-plan li:before{content:"+";position:absolute;left:0;font-weight:800}
+#cv-proposal .cv-featured li{border-color:#d5d5d5}
+#cv-proposal .cv-plan li:last-child{border-bottom:0}
+#cv-proposal .cv-plan-foot{font-size:11px;line-height:1.6;color:#aaa;padding:20px 23px 26px;border-top:1px solid #444}
+#cv-proposal .cv-featured .cv-plan-foot{border-color:#ccc;color:#555}
+#cv-proposal .cv-operation{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:45px}
+#cv-proposal .cv-operation>div{border:1px solid #555;padding:29px}
+#cv-proposal .cv-operation h3{font-family:"The National",Impact,sans-serif;font-size:32px;text-transform:uppercase;letter-spacing:1;margin:0 0 18px}
+#cv-proposal .cv-operation p{font-size:12px;line-height:1.95;color:#b9b9b9;margin:0}
+#cv-proposal .cv-discounts{border-top:1px solid #555}
+#cv-proposal .cv-discount-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:42px}
+#cv-proposal .cv-discount{border:1px solid #5d5d5d;padding:25px 19px;min-height:200px}
+#cv-proposal .cv-discount:last-child{background:#f5f5f5;color:#090909}
+#cv-proposal .cv-discount strong{font-family:"The National",Impact,sans-serif;font-size:clamp(43px,5vw,62px);line-height:1;letter-spacing:1}
+#cv-proposal .cv-discount strong span{font-size:20px;letter-spacing:0}
+#cv-proposal .cv-discount h3{font-size:13px;line-height:1.4;margin:22px 0 8px}
+#cv-proposal .cv-discount p{font-size:11px;color:#aaa;line-height:1.65;margin:0}
+#cv-proposal .cv-discount:last-child p{color:#555}
+#cv-proposal .cv-table-scroll{overflow-x:auto;margin-top:46px}
+#cv-proposal table{width:100%;min-width:730px;border-collapse:collapse;font-size:12px}
+#cv-proposal th{padding:17px 12px;text-align:left;color:#aaa;border-bottom:1px solid #777;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;vertical-align:bottom}
+#cv-proposal td{padding:20px 12px;border-bottom:1px solid #393939;vertical-align:top}
+#cv-proposal td strong{font-size:15px}
+#cv-proposal td small{display:block;font-size:10px;color:#888;margin-top:4px}
+#cv-proposal td.cv-best{font-weight:800;background:#eaeaea;color:#0b0b0b}
+#cv-proposal td.cv-best small{color:#555}
+#cv-proposal .cv-conditions{border:1px solid #555;padding:24px;margin-top:35px;color:#b8b8b8;font-size:11px;line-height:1.95}
+#cv-proposal .cv-conditions strong{color:#fff}
+#cv-proposal .cv-end{background:#050505;padding:100px 0 0}
+#cv-proposal .cv-end h2{font-size:clamp(48px,9vw,112px);line-height:.98;margin:20px 0 35px;max-width:950px}
+#cv-proposal .cv-end p{font-size:16px;color:#c3c3c3;max-width:650px}
+#cv-proposal .cv-next{display:flex;gap:35px;justify-content:space-between;border-top:1px solid #666;margin-top:70px;padding:24px 0 65px}
+#cv-proposal .cv-next>div{flex:1;font-size:12px;color:#ccc}
+#cv-proposal .cv-next strong{display:block;font-size:10px;letter-spacing:.15em;color:#fff;margin-bottom:8px}
+#cv-proposal .cv-footer-band{display:flex;align-items:center;min-height:88px;border-top:1px solid #444}
+#cv-proposal .cv-footer-band .cv-wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}
+#cv-proposal .cv-footer-band .cv-white-block{background:#f4f4f4;color:#080808;font-family:"The National",Impact,sans-serif;font-size:23px;padding:10px 26px;letter-spacing:-.04em}
+#cv-proposal .cv-footer-band span{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#b5b5b5}
+#cv-tools{background:#fff;color:#161616;border:1px solid #ddd;border-radius:12px;margin-bottom:8px;font-family:Arial,sans-serif}
+#cv-tools .cv-tools-left,#cv-tools .cv-tools-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#cv-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px;flex-wrap:wrap}
+#cv-tools strong{font-size:11px;letter-spacing:.05em}
+#cv-tools .cv-tools-sub{font-size:11px;color:#777}
+#cv-tools .cv-status-dot{width:7px;height:7px;background:#777;border-radius:50%}
+#cv-tools button{font-family:Arial,sans-serif;font-size:11px;font-weight:700;cursor:pointer;padding:10px 12px;border:1px solid #d0d0d0;background:#fff;color:#171717;border-radius:7px}
+#cv-tools button.cv-primary{background:#0b0b0b;color:#fff;border-color:#0b0b0b}
+#cv-notice{font-family:Arial,sans-serif;font-size:12px;color:#333;line-height:1.6}
+#cv-notice:not(:empty){background:#f4f4f4;border:1px solid #ddd;border-radius:8px;padding:10px 13px;margin:7px 0}
+#cv-editor{display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.83);overflow:auto;padding:20px}
+#cv-editor.cv-open{display:flex;align-items:flex-start;justify-content:center}
+#cv-editor-box{background:#fff;color:#111;width:min(820px,100%);border-radius:12px;margin:20px 0;padding:28px;font-family:Arial,sans-serif}
+#cv-editor-box h2{font-size:25px;margin:0 0 7px}
+#cv-editor-box>p{font-size:12px;color:#666;line-height:1.7}
+#cv-editor-box .cv-editor-row{border-top:1px solid #ddd;padding:17px 0}
+#cv-editor-box .cv-editor-row-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:13px}
+#cv-editor-box .cv-editor-row-head strong{font-size:13px}
+#cv-editor-box .cv-editor-row-head button{background:#fff;color:#666;border:1px solid #ddd;padding:6px 10px;cursor:pointer;border-radius:4px}
+#cv-editor-box .cv-fields{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+#cv-editor-box label{font-size:11px;font-weight:700;display:flex;flex-direction:column;gap:5px}
+#cv-editor-box label.cv-wide{grid-column:1/-1}
+#cv-editor-box input{border:1px solid #bbb;padding:10px;border-radius:5px;width:100%;font-size:12px}
+#cv-editor-box .cv-editor-actions{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #ddd;padding-top:20px}
+#cv-editor-box button{padding:10px 15px;border:1px solid #aaa;background:#fff;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700}
+#cv-editor-box button.cv-save{background:#111;color:#fff;border-color:#111}
+@media(max-width:860px){
+#cv-proposal .cv-method-grid{grid-template-columns:1fr 1fr}
+#cv-proposal .cv-plan-grid{grid-template-columns:1fr;max-width:600px;margin-left:auto;margin-right:auto}
+#cv-proposal .cv-plan h3{min-height:0}
+#cv-proposal .cv-plan-top{min-height:0}
+#cv-proposal .cv-portfolio-grid{grid-template-columns:1fr 1fr}
+#cv-proposal .cv-discount-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+#cv-proposal .cv-section-head{grid-template-columns:42px 1fr;gap:14px}
+#cv-proposal .cv-section-num{font-size:16px}
+#cv-proposal .cv-hero{min-height:590px}
+#cv-proposal .cv-hero h1{font-size:clamp(67px,17vw,110px)}
+#cv-proposal .cv-hero-statement,#cv-proposal .cv-diagnosis,#cv-proposal .cv-big-idea,#cv-proposal .cv-series,#cv-proposal .cv-operation{grid-template-columns:1fr}
+#cv-proposal .cv-signature{text-align:left}
+#cv-proposal .cv-method-grid{grid-template-columns:1fr 1fr}
+#cv-proposal .cv-method-item{padding:21px 16px;min-height:245px}
+#cv-proposal .cv-method-item h3{font-size:20px}
+#cv-proposal .cv-flow{flex-wrap:wrap}
+#cv-proposal .cv-portfolio-grid{grid-template-columns:1fr}
+#cv-proposal .cv-thumb{aspect-ratio:16/9}
+#cv-proposal .cv-targets>div{padding:20px}
+#cv-proposal .cv-timeline{grid-template-columns:1fr}
+#cv-proposal .cv-discount-grid{grid-template-columns:1fr 1fr;gap:8px}
+#cv-proposal .cv-discount{padding:19px 13px;min-height:188px}
+#cv-proposal .cv-next{flex-direction:column;gap:15px}
+#cv-proposal .cv-footer-band .cv-wrap{flex-direction:column;align-items:flex-start;padding-top:18px;padding-bottom:18px}
+#cv-editor-box .cv-fields{grid-template-columns:1fr}
+}
+@media print{
+@page{size:A4;margin:10mm}
+body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+#cv-tools,#cv-notice,#cv-editor{display:none!important}
+#cv-proposal .cv-hero{min-height:520px}
+#cv-proposal .cv-hero-body{padding:55px 0}
+#cv-proposal .cv-section{padding:50px 0}
+#cv-proposal .cv-diag,#cv-proposal .cv-method-item,#cv-proposal .cv-work,#cv-proposal .cv-series-card,#cv-proposal .cv-plan,#cv-proposal .cv-discount{break-inside:avoid}
+#cv-proposal .cv-portfolio-grid{grid-template-columns:repeat(3,1fr)}
+#cv-proposal .cv-thumb{aspect-ratio:16/10}
+#cv-proposal .cv-plan-grid{grid-template-columns:repeat(3,1fr);max-width:none}
+#cv-proposal .cv-discount-grid{grid-template-columns:repeat(4,1fr)}
+#cv-proposal table{min-width:0}
+}
+</style></head><body><main id="cv-proposal" data-app-block-stream-enter="">
+ <header class="cv-hero cv-noise">
+  <div class="cv-wrap">
+   <div class="cv-topbar">
+    <div class="cv-logo" data-app-block-stream-enter="">LOS BUENOS<span>BRANDING | ESTRATÉGIA | AUDIOVISUAL</span></div>
+    <div class="cv-kicker" data-app-block-stream-enter="">PROPOSTA COMERCIAL / 2026</div>
+   </div>
+  </div>
+  <div class="cv-wrap cv-hero-body" data-app-block-stream-enter="">
+   <div class="cv-kicker">ESTRATÉGIA + CONTEÚDO + COMUNICAÇÃO</div>
+   <h1 class="cv-title">CAVEZZO.</h1>
+   <div class="cv-hero-statement" data-app-block-stream-enter="">
+    <p>A Cavezzo já tem qualidade, identidade e diferenciais próprios. Nosso trabalho é transformar tudo isso em uma comunicação consistente, que valorize os produtos e ajude a gerar novas oportunidades de negócio.</p>
+    <div class="cv-signature">o valor está nos detalhes.</div>
+   </div>
+  </div>
+  <div class="cv-wrap" data-app-block-stream-enter="">
+   <div class="cv-hero-bottom"><span>LOS BUENOS × CAVEZZO</span><span>LONDRINA · PR</span><span>OUTUBRO / 2026</span></div>
+  </div>
+ </header>
+
+ <div class="cv-white-band" data-app-block-stream-enter="">
+  <div class="cv-wrap"><strong>UMA PROPOSTA FEITA SOB MEDIDA PARA A CAVEZZO.</strong><span>01 / 06</span></div>
+ </div>
+
+ <section class="cv-section" id="cv-diagnostico" data-app-block-stream-enter="">
+  <div class="cv-wrap">
+   <div class="cv-section-head">
+    <div class="cv-section-num">01.</div>
+    <div><div class="cv-kicker cv-muted">O QUE ENTENDEMOS NA REUNIÃO</div><h2 class="cv-title">O PRODUTO TEM HISTÓRIA.<br data-app-block-stream-enter="">A MARCA PRECISA CONTÁ-LA.</h2></div>
+   </div>
+   <p class="cv-lead" data-app-block-stream-enter="">Nossa conversa revelou uma marca com diferenciais reais criação autoral, fabricação própria, personalização, processos artesanais e pós-venda mas que ainda não consegue comunicar toda essa riqueza com a consistência necessária.</p>
+   <div class="cv-diagnosis" data-app-block-stream-enter="">
+    <div class="cv-diag"><span class="cv-micro" data-app-block-stream-enter="">01 / PERCEPÇÃO</span><h3 data-app-block-stream-enter="">Foco</h3><p data-app-block-stream-enter="">Queremos valorizar o que diferencia a Cavezzo, mostrando ao público o desenho autoral, a escolha dos materiais, as possibilidades de personalização e o cuidado na fabricação. São características que precisam ser conhecidas antes de qualquer comparação de preço.</p></div>
+    <div class="cv-diag" data-app-block-stream-enter=""><span class="cv-micro">02 / EXECUÇÃO</span><h3>Trabalho</h3><p>Para manter uma comunicação consistente, vamos trabalhar com planejamento mensal, pautas bem definidas e um cronograma claro de produção e entregas. Tudo isso com acompanhamento próximo, agilidade nas demandas e atenção aos detalhes de cada produto.</p></div>
+    <div class="cv-diag" data-app-block-stream-enter=""><span class="cv-micro">03 / COMERCIAL</span><h3>Tráfego</h3><p>Nosso objetivo é atrair um público mais alinhado à proposta da Cavezzo, que reconheça o valor do design, da qualidade e da personalização. Assim, o conteúdo também contribui para gerar contatos mais qualificados e facilitar o trabalho da equipe comercial.</p></div>
+    <div class="cv-diag" data-app-block-stream-enter=""><span class="cv-micro">04 / RELACIONAMENTO</span><h3>Parceiros</h3><p>Queremos fortalecer a presença da Cavezzo entre arquitetos e especificadores, criando conteúdos que apresentem materiais, acabamentos, processos e soluções personalizadas. Informações que esses profissionais possam aproveitar no dia a dia e compartilhar com seus clientes.</p></div>
+   </div>
+   <div class="cv-statement" data-app-block-stream-enter="">A CAVEZZO NÃO PRECISA APENAS SER VISTA.<br data-app-block-stream-enter=""><span data-app-block-stream-enter="">PRECISA SER COMPREENDIDA.</span></div>
+  </div>
+ </section>
+
+ <section class="cv-section cv-method" id="cv-metodo" data-app-block-stream-enter="">
+  <div class="cv-wrap" data-app-block-stream-enter="">
+   <div class="cv-section-head">
+    <div class="cv-section-num">02.</div>
+    <div><div class="cv-kicker">COMO A LOS BUENOS PODE AJUDAR</div><h2 class="cv-title">MENOS CONTEÚDO GENÉRICO.<br data-app-block-stream-enter="">MAIS INTENÇÃO.</h2></div>
+   </div>
+   <p class="cv-lead" data-app-block-stream-enter="">Nosso trabalho começa antes de apertar o REC. Precisamos entender o produto, identificar os detalhes relevantes e transformar tudo isso em comunicação que tenha estética, propósito e utilidade comercial.</p>
+   <div class="cv-method-grid" data-app-block-stream-enter="">
+    <div class="cv-method-item" data-app-block-stream-enter=""><span class="cv-micro">01 / IMERSÃO</span><h3>Entender a marca.</h3><p>Fábrica, showroom, processo criativo, público, produtos e prioridades comerciais.</p></div>
+    <div class="cv-method-item" data-app-block-stream-enter=""><span class="cv-micro">02 / DIREÇÃO</span><h3>Captar com intenção.</h3><p>Mostrar a costura que importa, o detalhe que diferencia e a decisão que dá identidade à peça.</p></div>
+    <div class="cv-method-item" data-app-block-stream-enter=""><span class="cv-micro">03 / CONSISTÊNCIA</span><h3>Produzir com método.</h3><p>Calendário, pautas, prazos, responsáveis e aprovações definidos com antecedência.</p></div>
+    <div class="cv-method-item" data-app-block-stream-enter=""><span class="cv-micro">04 / RESULTADO</span><h3>Comunicar para vender.</h3><p>Conteúdo para redes, arquitetos, campanhas, relacionamento e prospecção.</p></div>
+   </div>
+   <div class="cv-flow" data-app-block-stream-enter=""><span>BRIEFING</span><span data-app-block-stream-enter="">→ DIREÇÃO CRIATIVA</span><span data-app-block-stream-enter="">→ CAPTAÇÃO</span><span data-app-block-stream-enter="">→ EDIÇÃO</span><span data-app-block-stream-enter="">→ PUBLICAÇÃO</span><span data-app-block-stream-enter="">→ ANÁLISE</span></div>
+  </div>
+ </section>
+
+
+<section class="cv-section" id="cv-portfolio">
+  <div class="cv-wrap">
+
+    <div class="cv-section-head">
+      <div class="cv-section-num">03.</div>
+      <div>
+        <div class="cv-kicker cv-muted">PORTFÓLIO / LOS BUENOS</div>
+        <h2 class="cv-title">
+          ALGUMAS HISTÓRIAS<br>
+          QUE JÁ CONTAMOS.
+        </h2>
+      </div>
+    </div>
+
+    <p class="cv-lead">
+      Uma seleção de trabalhos para apresentar nosso olhar sobre
+      audiovisual, processos, produtos e construção de marca.
+    </p>
+
+    <div class="cv-portfolio-grid">
+
+      <!-- VÍDEO 01 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-01.png" alt="Croquis e criação de peças — Lis Concept" loading="lazy">
+          <span class="cv-thumb-index">01 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Croquis e criação de peças — Silvana, designer de joias</h3>
+          <p class="cv-handle">LIS CONCEPT · @lisconcept</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/DY9u2rxxhko/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 02 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-02.png" alt="Bastidores Coleção Histórias — Lis Concept" loading="lazy">
+          <span class="cv-thumb-index">02 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Bastidores — Coleção Histórias</h3>
+          <p class="cv-handle">LIS CONCEPT · @lisconcept</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/DXxWzklJYAF/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 03 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-03.png" alt="Teaser da coleção — Lis Concept" loading="lazy">
+          <span class="cv-thumb-index">03 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Teaser de coleção — Suspense</h3>
+          <p class="cv-handle">LIS CONCEPT · @lisconcept</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reel/DeHX3YAhgAG/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 04 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-04.png" alt="Dia de noiva — Fofa Benício" loading="lazy">
+          <span class="cv-thumb-index">04 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Dia de noiva — Filme do salão</h3>
+          <p class="cv-handle">FOFA BENÍCIO</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/DHjO1O7xNtu/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 05 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-05.png" alt="Trailer dia de noiva — Fofa Benício" loading="lazy">
+          <span class="cv-thumb-index">05 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Dia de noiva — Trailer</h3>
+          <p class="cv-handle">FOFA BENÍCIO</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/DGyseq4hmOB/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 06 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-06.png" alt="Trailer biomedicina — Tamires Marques" loading="lazy">
+          <span class="cv-thumb-index">06 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Biomedicina — Trailer institucional</h3>
+          <p class="cv-handle">TAMIRES MARQUES</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/C9NMlb0RveW/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 07 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-07.png" alt="Trailer de evento — Dra. Paula Palma" loading="lazy">
+          <span class="cv-thumb-index">07 / YOUTUBE</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Trailer de evento</h3>
+          <p class="cv-handle">DRA. PAULA PALMA</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.youtube.com/watch?v=N90kiS9vqS0" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 08 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-08.png" alt="Videoclipe de encerramento — Dra. Paula Palma" loading="lazy">
+          <span class="cv-thumb-index">08 / YOUTUBE</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Videoclipe emocionante — Encerramento de evento</h3>
+          <p class="cv-handle">DRA. PAULA PALMA</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.youtube.com/watch?v=wAZkM14PvqM" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 09 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-09.png" alt="Prova social e autoridade — Dra. Paula Palma" loading="lazy">
+          <span class="cv-thumb-index">09 / Instagram</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Momento em família - Conexão</h3>
+          <p class="cv-handle">Larissa Scarpim</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.youtube.com/watch?v=MB0ubmipa1o" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 10 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-10.png" alt="Consórcios — Casal Investidor" loading="lazy">
+          <span class="cv-thumb-index">10 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Consórcios — Conteúdo de autoridade</h3>
+          <p class="cv-handle">CASAL INVESTIDOR · @casal.investidor10</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/casal.investidor10/reel/DR4fN2SERAA/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 11 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-11.png" alt="Teaser centro de distribuição SP — Fabreck" loading="lazy">
+          <span class="cv-thumb-index">11 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Teaser — Centro de Distribuição SP</h3>
+          <p class="cv-handle">FABRECK</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/DQeQ3cej6yH/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 12 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-12.png" alt="Teaser dinâmico stomp music — Fabreck" loading="lazy">
+          <span class="cv-thumb-index">12 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Teaser dinâmico — Stomp Music</h3>
+          <p class="cv-handle">FABRECK</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/DOhHfTWEs6t/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 13 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-13.png" alt="Dia de produção na fábrica — Fabreck" loading="lazy">
+          <span class="cv-thumb-index">13 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Dia de produção na fábrica</h3>
+          <p class="cv-handle">FABRECK</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/reels/DLAfYp-sFZA/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 14 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-14.png" alt="Review do ano — Dr. Anderson Kusumoto" loading="lazy">
+          <span class="cv-thumb-index">14 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Review do ano — Retrospectiva</h3>
+          <p class="cv-handle">DR. ANDERSON KUSUMOTO · @dr.andersonkusumoto</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/dr.andersonkusumoto/reel/DEXwhssxugC/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+      <!-- VÍDEO 15 -->
+      <article class="cv-work">
+        <div class="cv-thumb">
+          <img src="assets/video-15.png" alt="Trailer cirurgia de catarata — Dr. Anderson Kusumoto" loading="lazy">
+          <span class="cv-thumb-index">15 / INSTAGRAM</span>
+        </div>
+        <div class="cv-work-meta">
+          <h3>Trailer — Cirurgia de catarata</h3>
+          <p class="cv-handle">DR. ANDERSON KUSUMOTO · @dr.andersonkusumoto</p>
+        </div>
+        <a class="cv-video-btn" href="https://www.instagram.com/dr.andersonkusumoto/reel/DXptUZzgvB2/" target="_blank" rel="noopener noreferrer">
+          <span>ASSISTIR VÍDEO</span><span>↗</span>
+        </a>
+      </article>
+
+    </div>
+
+    <p class="cv-portfolio-note">
+      Uma seleção de produções audiovisuais desenvolvidas pela Los Buenos
+      para marcas, profissionais e empresas de diferentes segmentos.
+    </p>
+
+  </div>
+</section>
+
+
+ <section class="cv-section cv-gift" id="cv-estrategia" data-app-block-stream-enter="">
+  <div class="cv-wrap" data-app-block-stream-enter="">
+   <div class="cv-gift-tag"><strong>✳ UM PRESENTE DA LOS BUENOS</strong><span>Direção estratégica inicial · construída a partir da nossa conversa</span></div>
+   <div class="cv-section-head" data-app-block-stream-enter="">
+    <div class="cv-section-num">04.</div>
+    <div><div class="cv-kicker cv-muted">NOSSA PRIMEIRA VISÃO ESTRATÉGICA</div><h2 class="cv-title">DE FÁBRICA DE MÓVEIS<br data-app-block-stream-enter="">A ATELIÊ AUTORAL.</h2></div>
+   </div>
+   <p class="cv-lead" data-app-block-stream-enter="">A estrutura produtiva é uma grande vantagem da Cavezzo. Mas o posicionamento da marca pode ir além da capacidade de fabricar: pode destacar a autoria, a artesania e a possibilidade de criar peças que carregam a identidade de quem as escolhe.</p>
+   <div class="cv-big-idea" data-app-block-stream-enter="">
+    <div><span class="cv-kicker cv-muted" data-app-block-stream-enter="">TERRITÓRIO DE MARCA SUGERIDO</span><h3 data-app-block-stream-enter="">DESIGN.<br>MATÉRIA.<br data-app-block-stream-enter="">ASSINATURA.</h3></div>
+    <p data-app-block-stream-enter="">Uma comunicação que mostre a jornada completa: a inspiração do Leandro, o desenho, a escolha dos materiais, o trabalho humano, os testes de conforto e a peça final. A fábrica deixa de ser apenas um lugar de produção e se torna a prova de que cada detalhe tem uma razão de existir.</p>
+   </div>
+   <div class="cv-kicker cv-muted" data-app-block-stream-enter="">DIRECIONAMENTO DE PÚBLICO APONTADO NA REUNIÃO</div>
+   <div class="cv-targets" data-app-block-stream-enter="">
+    <div><strong>70%</strong><p><b data-app-block-stream-enter="">ARQUITETOS E ESPECIFICADORES.</b> Relacionamento, repertório técnico, possibilidades de personalização e confiança.</p></div>
+    <div data-app-block-stream-enter=""><strong>30%</strong><p><b>CONSUMIDOR FINAL.</b> Desejo, percepção de valor, descoberta da marca e visita ao showroom.</p></div>
+   </div>
+   <h3 class="cv-subhead" data-app-block-stream-enter="">QUATRO SÉRIES QUE PODEM NASCER DESSA VISÃO.</h3>
+   <div class="cv-series" data-app-block-stream-enter="">
+    <div class="cv-series-card"><span>01 / PROCESSO</span><h4>O detalhe que ninguém vê.</h4><p>Costura manual, acabamentos, materiais e decisões que transformam qualidade em algo visível.</p></div>
+    <div class="cv-series-card" data-app-block-stream-enter=""><span>02 / AUTORIA</span><h4>Do rabisco à peça.</h4><p>Histórias em capítulos: inspiração, desenho, fabricação e revelação de novos produtos.</p></div>
+    <div class="cv-series-card" data-app-block-stream-enter=""><span>03 / ARQUITETURA</span><h4>Material é linguagem.</h4><p>Tecidos, acabamentos e soluções pensadas para o repertório e a rotina dos arquitetos.</p></div>
+    <div class="cv-series-card" data-app-block-stream-enter=""><span>04 / NEGÓCIOS</span><h4 data-app-block-stream-enter="">Soluções para espaços.</h4><p data-app-block-stream-enter="">Aplicações corporativas, como banquetas personalizadas para restaurantes, cafés e bistrôs.</p></div>
+   </div>
+   <div style="margin-top:65px" data-app-block-stream-enter="">
+    <h3 class="cv-subhead">UMA PRIMEIRA JORNADA DE 90 DIAS.</h3>
+    <div class="cv-timeline" data-app-block-stream-enter="">
+     <div><strong>0130 DIAS</strong><p><b>IMERSÃO.</b> Alinhamento de linguagem, conhecimento da fábrica, prioridades do comercial e primeiras entregas.</p></div>
+     <div><strong>3160 DIAS</strong><p><b>CONSISTÊNCIA.</b> Desenvolvimento de séries, banco audiovisual e materiais úteis para arquitetos e equipe comercial.</p></div>
+     <div data-app-block-stream-enter=""><strong>6190 DIAS</strong><p><b>REFINAMENTO.</b> Análise de conteúdos, qualidade dos contatos e ajustes no planejamento.</p></div>
+    </div>
+   </div>
+   <div class="cv-statement" style="margin-bottom:0" data-app-block-stream-enter="">O VALOR DA CAVEZZO COMEÇA A SER CONSTRUÍDO ANTES DA VISITA AO SHOWROOM.</span></div>
+  </div>
+ </section>
+
+ <section class="cv-section cv-pricing" id="cv-orcamento" data-app-block-stream-enter="">
+  <div class="cv-wrap">
+   <div class="cv-section-head">
+    <div class="cv-section-num">05.</div>
+    <div><div class="cv-kicker cv-muted">INVESTIMENTO / PLANOS MENSAIS</div><h2 class="cv-title" data-app-block-stream-enter="">TRÊS NÍVEIS.<br>UMA MESMA DIREÇÃO.</h2></div>
+   </div>
+   <p class="cv-lead" data-app-block-stream-enter="">Da presença audiovisual recorrente à atuação completa de agência, com estratégia, design, campanhas e gestão de mídia.</p>
+   <div class="cv-plan-grid" data-app-block-stream-enter="">
+    <article class="cv-plan">
+     <div class="cv-plan-top">
+      <div class="cv-micro">NÍVEL 01 / CONTEÚDO</div>
+      <h3 data-app-block-stream-enter="">ESSENCIAL.</h3>
+      <div class="cv-price" data-app-block-stream-enter="">R$ 2.500 <span>/ MÊS</span></div>
+      <p data-app-block-stream-enter="">Para estabelecer uma produção audiovisual constante, com direção, edição e publicação.</p>
+     </div>
+     <div class="cv-plan-body" data-app-block-stream-enter="">
+      <div class="cv-micro" data-app-block-stream-enter="">ENTREGAS MENSAIS</div>
+      <ul data-app-block-stream-enter="">
+       <li><b>1 turno de captação</b> de até 4 horas na fábrica ou showroom.</li>
+       <li><b>6 vídeos verticais</b> editados, de até 90 segundos.</li>
+       <li data-app-block-stream-enter=""><b>6 publicações em Reels</b>, incluindo capas e legendas.</li>
+       <li data-app-block-stream-enter=""><b>8 conteúdos de Stories</b> derivados das captações.</li>
+       <li data-app-block-stream-enter="">Planejamento mensal de pautas e calendário editorial.</li>
+       <li data-app-block-stream-enter="">Direção de gravação com abordagem natural, sem depender de textos decorados.</li>
+       <li data-app-block-stream-enter="">Edição, tratamento básico de cor e áudio, legendagem e identidade visual.</li>
+       <li data-app-block-stream-enter="">Agendamento das publicações após aprovação.</li>
+       <li data-app-block-stream-enter="">Até 2 rodadas consolidadas de ajustes por vídeo.</li>
+       <li data-app-block-stream-enter="">Resumo mensal dos resultados das publicações.</li>
+      </ul>
+     </div>
+     <div class="cv-plan-foot" data-app-block-stream-enter="">FOCO: PRESENÇA DIGITAL E CONSTRUÇÃO DE REPERTÓRIO AUDIOVISUAL.</div>
+    </article>
+
+    <article class="cv-plan cv-featured" data-app-block-stream-enter="">
+     <div class="cv-plan-top" data-app-block-stream-enter="">
+      <div class="cv-micro">NÍVEL 02 / AGÊNCIA</div>
+      <h3>COMUNICAÇÃO<br>INTEGRADA.</h3>
+      <div class="cv-price">R$ 3.100 <span data-app-block-stream-enter="">/ MÊS</span></div>
+      <p data-app-block-stream-enter="">Para conectar conteúdo, posicionamento, campanhas e materiais gráficos em uma linguagem consistente.</p>
+     </div>
+     <div class="cv-plan-body" data-app-block-stream-enter="">
+      <div class="cv-micro" data-app-block-stream-enter="">TUDO DO NÍVEL 01, COM AMPLIAÇÕES</div>
+      <ul data-app-block-stream-enter="">
+       <li><b>Até 8 vídeos verticais</b> mensais no total.</li>
+       <li><b>1 turno principal de captação</b> de até 4 horas + <b data-app-block-stream-enter="">1 visita complementar</b> de até 2 horas, conforme calendário.</li>
+       <li data-app-block-stream-enter=""><b>4 posts estáticos ou carrosséis</b> por mês.</li>
+       <li data-app-block-stream-enter=""><b>Até 10 conteúdos de Stories</b> no total.</li>
+       <li data-app-block-stream-enter="">Direção de comunicação e planejamento editorial mais aprofundado.</li>
+       <li data-app-block-stream-enter=""><b data-app-block-stream-enter="">1 conceito de campanha mensal</b>, com peças desdobradas dentro do volume contratado.</li>
+       <li data-app-block-stream-enter=""><b>1 peça de comunicação interna</b> por mês, como aviso, material institucional ou endomarketing.</li>
+       <li data-app-block-stream-enter=""><b>1 layout de papelaria</b> por mês, como convite, cartão, tag ou material de relacionamento.</li>
+       <li data-app-block-stream-enter="">Adaptações digitais de conteúdos para compartilhamento com arquitetos via WhatsApp.</li>
+       <li data-app-block-stream-enter="">Reunião estratégica mensal com marketing e/ou comercial.</li>
+       <li data-app-block-stream-enter="">Relatório mensal com recomendações de melhoria.</li>
+      </ul>
+     </div>
+     <div class="cv-plan-foot" data-app-block-stream-enter="">FOCO: UMA MARCA COERENTE EM TODOS OS PONTOS DE CONTATO.</div>
+    </article>
+
+    <article class="cv-plan" data-app-block-stream-enter="">
+     <div class="cv-plan-top">
+      <div class="cv-micro">NÍVEL 03 / PERFORMANCE</div>
+      <h3 data-app-block-stream-enter="">COMUNICAÇÃO<br>+ CRESCIMENTO.</h3>
+      <div class="cv-price" data-app-block-stream-enter="">R$ 6.800 <span>/ MÊS</span></div>
+      <p data-app-block-stream-enter="">Para integrar produção, marca e aquisição de oportunidades comerciais com mídia paga.</p>
+     </div>
+     <div class="cv-plan-body" data-app-block-stream-enter="">
+      <div class="cv-micro">TUDO DO NÍVEL 02, MAIS</div>
+      <ul data-app-block-stream-enter="">
+       <li><b>Gestão de Google Ads</b>, priorizando buscas com intenção comercial.</li>
+       <li><b>Gestão de Meta Ads</b> para Instagram e Facebook.</li>
+       <li data-app-block-stream-enter="">Planejamento de campanhas para arquitetos, consumidor final e mercado corporativo.</li>
+       <li data-app-block-stream-enter="">Até <b>4 campanhas ativas simultaneamente</b>, de acordo com os objetivos e a verba disponível.</li>
+       <li data-app-block-stream-enter="">Até <b>4 variações de criativos</b> mensais para anúncios, além das peças orgânicas.</li>
+       <li data-app-block-stream-enter="">Segmentação, testes de mensagens e otimizações semanais.</li>
+       <li data-app-block-stream-enter="">Estratégias de remarketing quando houver público e estrutura técnica suficientes.</li>
+       <li data-app-block-stream-enter="">Configuração básica de UTMs e eventos de conversão, quando tecnicamente viável.</li>
+       <li data-app-block-stream-enter="">Alinhamento de campanhas com WhatsApp e processo comercial.</li>
+       <li data-app-block-stream-enter="">Acompanhamento de leads e oportunidades qualificadas, conforme dados disponibilizados pela Cavezzo.</li>
+       <li data-app-block-stream-enter="">Relatório mensal de mídia, desempenho e próximos testes.</li>
+       <li data-app-block-stream-enter="">Avaliação de Pinterest Ads como canal complementar, se fizer sentido para o público.</li>
+      </ul>
+     </div>
+     <div class="cv-plan-foot" data-app-block-stream-enter="">FOCO: POSICIONAMENTO + DEMANDA QUALIFICADA. VERBA DE ANÚNCIOS À PARTE.</div>
+    </article>
+   </div>
+
+   <div class="cv-operation" data-app-block-stream-enter="">
+    <div data-app-block-stream-enter="">
+     <h3>COMO FUNCIONA NA PRÁTICA.</h3>
+     <p><b>01.</b> Reunião de alinhamento para definir prioridades do mês.<br><b>02.</b> Pautas e referências aprovadas antes da captação.<br data-app-block-stream-enter=""><b data-app-block-stream-enter="">03.</b> Gravações agendadas, com aproveitamento de diferentes conteúdos por visita.<br data-app-block-stream-enter=""><b data-app-block-stream-enter="">04.</b> Primeira versão do lote em até 5 dias úteis após a gravação, salvo peças de maior complexidade previamente combinadas.<br data-app-block-stream-enter=""><b data-app-block-stream-enter="">05.</b> Ajustes consolidados, aprovação e agendamento.<br data-app-block-stream-enter=""><b data-app-block-stream-enter="">06.</b> Revisão dos resultados e planejamento do ciclo seguinte.</p>
+    </div>
+    <div data-app-block-stream-enter="">
+     <h3>O QUE PRECISAMOS DA CAVEZZO.</h3>
+     <p>Um ponto focal para centralizar briefings e aprovações; acesso aos ambientes de gravação; disponibilidade previamente combinada do Leandro e da equipe; informações de produtos, lançamentos e campanhas; e retorno de aprovação preferencialmente em até 2 dias úteis. A Los Buenos trabalha em conjunto com o marketing interno, com responsabilidades definidas para evitar retrabalho.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="cv-section cv-discounts" id="cv-descontos" data-app-block-stream-enter="">
+  <div class="cv-wrap">
+   <div class="cv-section-head">
+    <div class="cv-section-num">06.</div>
+    <div><div class="cv-kicker cv-muted">CONDIÇÕES ESPECIAIS</div><h2 class="cv-title" data-app-block-stream-enter="">QUANTO MAIS LONGA A PARCERIA,<br>MAIOR O BENEFÍCIO.</h2></div>
+   </div>
+   <p class="cv-lead" data-app-block-stream-enter="">Os três níveis são serviços mensais. Para contratos com maior continuidade, oferecemos condições especiais de investimento.</p>
+   <div class="cv-discount-grid" data-app-block-stream-enter="">
+    <div class="cv-discount"><strong>10% <span data-app-block-stream-enter="">OFF</span></strong><h3 data-app-block-stream-enter="">3 MESES / À VISTA</h3><p data-app-block-stream-enter="">Pagamento integral antecipado do período de 3 meses.</p></div>
+    <div class="cv-discount" data-app-block-stream-enter=""><strong>15% <span>OFF</span></strong><h3>6 MESES / À VISTA</h3><p data-app-block-stream-enter="">Pagamento integral antecipado do período de 6 meses.</p></div>
+    <div class="cv-discount" data-app-block-stream-enter=""><strong>15% <span>OFF</span></strong><h3>12 MESES / MENSAL</h3><p>Contrato anual com mensalidades reduzidas.</p></div>
+    <div class="cv-discount" data-app-block-stream-enter=""><strong>25% <span>OFF</span></strong><h3>12 MESES / À VISTA</h3><p data-app-block-stream-enter="">Maior benefício para pagamento integral antecipado.</p></div>
+   </div>
+   <!-- <div class="cv-table-scroll" data-app-block-stream-enter="">
+    <table>
+     <thead data-app-block-stream-enter=""><tr><th>PLANO</th><th>MENSAL PADRÃO</th><th>3 MESES<br>À VISTA</th><th>6 MESES<br>À VISTA</th><th>12 MESES<br>MENSAIS</th><th data-app-block-stream-enter="">12 MESES<br>À VISTA</th></tr></thead>
+     <tbody data-app-block-stream-enter="">
+      <tr><td><strong>NÍVEL 01</strong><small>Conteúdo</small></td><td>R$ 2.500</td><td>R$ 6.750<small>Total</small></td><td>R$ 12.750<small>Total</small></td><td>R$ 2.125<small data-app-block-stream-enter="">Por mês</small></td><td class="cv-best" data-app-block-stream-enter="">R$ 22.500<small>Total</small></td></tr>
+      <tr data-app-block-stream-enter=""><td><strong>NÍVEL 02</strong><small>Agência</small></td><td>R$ 3.100</td><td>R$ 8.370<small>Total</small></td><td>R$ 15.810<small>Total</small></td><td data-app-block-stream-enter="">R$ 2.635<small>Por mês</small></td><td class="cv-best" data-app-block-stream-enter="">R$ 27.900<small>Total</small></td></tr>
+      <tr data-app-block-stream-enter=""><td><strong>NÍVEL 03</strong><small>Performance</small></td><td>R$ 6.800</td><td>R$ 18.360<small>Total</small></td><td>R$ 34.680<small data-app-block-stream-enter="">Total</small></td><td data-app-block-stream-enter="">R$ 5.780<small>Por mês</small></td><td class="cv-best" data-app-block-stream-enter="">R$ 61.200<small>Total</small></td></tr>
+     </tbody>
+    </table>
+   </div> -->
+   <div class="cv-conditions" data-app-block-stream-enter=""><strong>CONDIÇÕES GERAIS.</strong> Descontos não cumulativos. As condições “à vista” exigem pagamento integral antecipado do período contratado, por Pix ou transferência. O contrato de 12 meses com 15% de desconto permite pagamento mensal. Parcelamento no cartão poderá ser avaliado, com taxas da operadora aplicáveis, sem equiparação automática ao pagamento à vista. Verba de anúncios não incluída. Impressão de materiais, produção gráfica, locação, elenco, deslocamentos fora de Londrina, sites, landing pages, automações complexas e demandas extraordinárias não estão incluídos. Os quantitativos representam limites mensais e não são cumulativos. Prazos e volumes poderão ser ajustados de comum acordo conforme a complexidade das peças. A execução está sujeita à aprovação de contrato e cronograma.</div>
+  </div>
+ </section>
+
+ <footer class="cv-end cv-noise" data-app-block-stream-enter="">
+  <div class="cv-wrap">
+   <div class="cv-kicker">LOS BUENOS × CAVEZZO</div>
+   <h2 class="cv-title">A CAVEZZO TEM<br>O QUE CONTAR.<br>VAMOS MOSTRAR.</h2>
+   <p>Uma comunicação à altura do trabalho, do repertório e da personalidade que existem em cada criação.</p>
+   <div class="cv-next" data-app-block-stream-enter="">
+    <div><strong>01 / ESCOLHA</strong>Definição do nível de atuação.</div>
+    <div data-app-block-stream-enter=""><strong>02 / ALINHAMENTO</strong>Escopo, responsabilidades e contrato.</div>
+    <div data-app-block-stream-enter=""><strong>03 / IMERSÃO</strong>Fábrica, showroom e equipe.</div>
+    <div data-app-block-stream-enter=""><strong>04 / PRODUÇÃO</strong>Calendário e primeiras entregas.</div>
+   </div>
+  </div>
+  <div class="cv-footer-band" data-app-block-stream-enter=""><div class="cv-wrap"><div class="cv-white-block">AGÊNCIA LOS BUENOS.</div><span>ESTRATÉGIA · DESIGN · AUDIOVISUAL</span><span>OUTUBRO 2026</span></div></div>
+ </footer>
+</main></body></html>
