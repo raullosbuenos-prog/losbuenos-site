@@ -132,19 +132,19 @@
 
 @font-face {
  font-family: "The National";
- src: url("./TheNational.otf") format("opentype");
+ src: url("./TheNational-Bold.otf") format("opentype");
  font-display: swap;
 }
 
 @font-face {
  font-family: "Geomanist";
- src: url("./Geomanist.otf") format("opentype");
+ src: url("./Geomanist-Regular.otf") format("opentype");
  font-display: swap;
 }
 
 @font-face {
  font-family: "Alakite Signature";
- src: url("./AlakiteSignature.otf") format("opentype");
+ src: url("./autobiography.otf") format("opentype");
  font-display: swap;
 }
 :root{--cv-black:#080808;--cv-ink:#101010;--cv-panel:#121212;--cv-panel2:#181818;--cv-line:#353535;--cv-white:#f6f6f6;--cv-gray:#a7a7a7;--cv-soft:#727272}
@@ -154,8 +154,8 @@ body{margin:0}
 #cv-proposal *{box-sizing:border-box}
 #cv-proposal a{text-decoration:none;color:inherit}
 #cv-proposal button{font:inherit}
-#cv-proposal .cv-wrap{width:min(1140px,100%);margin:auto;padding-left:clamp(23px,5vw,65px);padding-right:clamp(23px,5vw,65px);letter-spacing:5}
-#cv-proposal .cv-title{font-family:"The National","Arial Narrow",Impact,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:1;line-height:1}
+#cv-proposal .cv-wrap{width:min(1140px,100%);margin:auto;padding-left:clamp(23px,5vw,65px);padding-right:clamp(23px,5vw,65px);letter-spacing:5px}
+#cv-proposal .cv-title{font-family:"The National","Arial Narrow",Impact,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:1px;line-height:1}
 #cv-proposal .cv-kicker{font-size:10px;font-weight:700;letter-spacing:.23em;text-transform:uppercase}
 #cv-proposal .cv-micro{font-size:10px;letter-spacing:.12em;text-transform:uppercase}
 #cv-proposal .cv-muted{color:var(--cv-gray)}
@@ -173,10 +173,10 @@ body{margin:0}
 #cv-proposal .cv-logo span{display:block;font-size:10px;font-family:"Geomanist",Arial,sans-serif;font-weight:400;letter-spacing:.34em;margin-top:10px}
 #cv-proposal .cv-hero-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:85px;padding-bottom:75px}
 #cv-proposal .cv-hero-body .cv-kicker{color:#ddd}
-#cv-proposal .cv-hero h1{font-size:clamp(88px,16vw,198px);margin:18px 0 18px;letter-spacing:1}
+#cv-proposal .cv-hero h1{font-size:clamp(88px,16vw,198px);margin:18px 0 18px;letter-spacing:1px}
 #cv-proposal .cv-hero-statement{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:end;border-top:1px solid #555;padding-top:24px;margin-top:12px}
 #cv-proposal .cv-hero-statement p{font-size:clamp(17px,2.4vw,26px);line-height:1.35;max-width:450px;margin:0}
-#cv-proposal .cv-signature{font-family:"Alacarte Signature","Brush Script MT",cursive;font-weight:400;font-size:clamp(29px,5vw,56px);line-height:1.2;text-align:right;color:#e7e7e7}
+#cv-proposal .cv-signature{font-family:"Alakite Signature","Brush Script MT",cursive;font-weight:400;font-size:clamp(29px,5vw,56px);line-height:1.2;text-align:right;color:#e7e7e7}
 #cv-proposal .cv-hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0;border-top:1px solid #555;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#c4c4c4}
 #cv-proposal .cv-white-band{background:#f4f4f4;color:#080808;display:flex;align-items:center;min-height:68px}
 #cv-proposal .cv-white-band .cv-wrap{display:flex;justify-content:space-between;align-items:center;gap:15px}
@@ -187,7 +187,7 @@ body{margin:0}
 #cv-proposal .cv-diag .cv-micro{color:#a6a6a6}
 #cv-proposal .cv-diag h3{font-size:clamp(20px,2.6vw,30px);line-height:1.2;font-weight:600;letter-spacing:-.04em;margin:25px 0 12px}
 #cv-proposal .cv-diag p{color:#b2b2b2;font-size:13px;line-height:1.8;margin:0;max-width:420px}
-#cv-proposal .cv-statement{font-family:"The National",Impact,sans-serif;font-size:clamp(32px,5.4vw,67px);line-height:1.1;letter-spacing:1;text-transform:uppercase;border-top:1px solid #666;border-bottom:1px solid #666;margin-top:60px;padding:32px 0}
+#cv-proposal .cv-statement{font-family:"The National",Impact,sans-serif;font-size:clamp(32px,5.4vw,67px);line-height:1.1;letter-spacing:1px;text-transform:uppercase;border-top:1px solid #666;border-bottom:1px solid #666;margin-top:60px;padding:32px 0}
 #cv-proposal .cv-statement span{color:#898989}
 #cv-proposal .cv-method{background:#f1f1f1;color:#080808}
 #cv-proposal .cv-method .cv-section-num{border-color:#888}
@@ -223,9 +223,9 @@ body{margin:0}
 #cv-proposal .cv-targets{display:grid;grid-template-columns:7fr 3fr;border:1px solid #666;margin:38px 0 70px}
 #cv-proposal .cv-targets>div{padding:25px 30px}
 #cv-proposal .cv-targets>div+div{border-left:1px solid #666}
-#cv-proposal .cv-targets strong{font-family:"The National",Impact,sans-serif;font-size:clamp(54px,8vw,92px);letter-spacing:1;line-height:1}
+#cv-proposal .cv-targets strong{font-family:"The National",Impact,sans-serif;font-size:clamp(54px,8vw,92px);letter-spacing:1px;line-height:1}
 #cv-proposal .cv-targets p{font-size:12px;color:#c6c6c6;max-width:400px;margin:9px 0 0}
-#cv-proposal .cv-subhead{font-family:"The National",Impact,sans-serif;font-size:clamp(31px,4vw,52px);letter-spacing:1;text-transform:uppercase;line-height:1.1;margin:0 0 28px}
+#cv-proposal .cv-subhead{font-family:"The National",Impact,sans-serif;font-size:clamp(31px,4vw,52px);letter-spacing:1px;text-transform:uppercase;line-height:1.1;margin:0 0 28px}
 #cv-proposal .cv-series{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 #cv-proposal .cv-series-card{border:1px solid #484848;padding:26px;min-height:175px}
 #cv-proposal .cv-series-card span{font-size:10px;color:#a6a6a6;letter-spacing:.15em}
@@ -243,8 +243,8 @@ body{margin:0}
 #cv-proposal .cv-featured .cv-plan-top{border-color:#bbb}
 #cv-proposal .cv-plan-top .cv-micro{color:#aaa}
 #cv-proposal .cv-featured .cv-plan-top .cv-micro{color:#555}
-#cv-proposal .cv-plan h3{font-family:"The National",Impact,sans-serif;font-size:clamp(28px,3.3vw,40px);line-height:1.04;text-transform:uppercase;letter-spacing:1;margin:20px 0 23px;min-height:80px}
-#cv-proposal .cv-price{font-family:"The National",Impact,sans-serif;font-size:clamp(37px,4vw,53px);font-weight:800;letter-spacing:1;line-height:1}
+#cv-proposal .cv-plan h3{font-family:"The National",Impact,sans-serif;font-size:clamp(28px,3.3vw,40px);line-height:1.04;text-transform:uppercase;letter-spacing:1px;margin:20px 0 23px;min-height:80px}
+#cv-proposal .cv-price{font-family:"The National",Impact,sans-serif;font-size:clamp(37px,4vw,53px);font-weight:800;letter-spacing:1px;line-height:1}
 #cv-proposal .cv-price span{font-family:"Geomanist",Arial,sans-serif;font-size:12px;font-weight:400;letter-spacing:0;color:#aaa}
 #cv-proposal .cv-featured .cv-price span{color:#666}
 #cv-proposal .cv-plan-top p{font-size:12px;color:#aaa;line-height:1.65;margin:17px 0 0}
@@ -261,13 +261,13 @@ body{margin:0}
 #cv-proposal .cv-featured .cv-plan-foot{border-color:#ccc;color:#555}
 #cv-proposal .cv-operation{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:45px}
 #cv-proposal .cv-operation>div{border:1px solid #555;padding:29px}
-#cv-proposal .cv-operation h3{font-family:"The National",Impact,sans-serif;font-size:32px;text-transform:uppercase;letter-spacing:1;margin:0 0 18px}
+#cv-proposal .cv-operation h3{font-family:"The National",Impact,sans-serif;font-size:32px;text-transform:uppercase;letter-spacing:1px;margin:0 0 18px}
 #cv-proposal .cv-operation p{font-size:12px;line-height:1.95;color:#b9b9b9;margin:0}
 #cv-proposal .cv-discounts{border-top:1px solid #555}
 #cv-proposal .cv-discount-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:42px}
 #cv-proposal .cv-discount{border:1px solid #5d5d5d;padding:25px 19px;min-height:200px}
 #cv-proposal .cv-discount:last-child{background:#f5f5f5;color:#090909}
-#cv-proposal .cv-discount strong{font-family:"The National",Impact,sans-serif;font-size:clamp(43px,5vw,62px);line-height:1;letter-spacing:1}
+#cv-proposal .cv-discount strong{font-family:"The National",Impact,sans-serif;font-size:clamp(43px,5vw,62px);line-height:1;letter-spacing:1px}
 #cv-proposal .cv-discount strong span{font-size:20px;letter-spacing:0}
 #cv-proposal .cv-discount h3{font-size:13px;line-height:1.4;margin:22px 0 8px}
 #cv-proposal .cv-discount p{font-size:11px;color:#aaa;line-height:1.65;margin:0}
@@ -445,7 +445,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 01 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-01.png" alt="Croquis e criação de peças — Lis Concept" loading="lazy">
+          <img src="Assets/video-01.png" alt="Croquis e criação de peças — Lis Concept" loading="lazy">
           <span class="cv-thumb-index">01 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -460,7 +460,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 02 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-02.png" alt="Bastidores Coleção Histórias — Lis Concept" loading="lazy">
+          <img src="Assets/video-02.png" alt="Bastidores Coleção Histórias — Lis Concept" loading="lazy">
           <span class="cv-thumb-index">02 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -475,7 +475,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 03 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-03.png" alt="Teaser da coleção — Lis Concept" loading="lazy">
+          <img src="Assets/video-03.png" alt="Teaser da coleção — Lis Concept" loading="lazy">
           <span class="cv-thumb-index">03 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -490,7 +490,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 04 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-04.png" alt="Dia de noiva — Fofa Benício" loading="lazy">
+          <img src="Assets/video-04.png" alt="Dia de noiva — Fofa Benício" loading="lazy">
           <span class="cv-thumb-index">04 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -505,7 +505,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 05 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-05.png" alt="Trailer dia de noiva — Fofa Benício" loading="lazy">
+          <img src="Assets/video-05.png" alt="Trailer dia de noiva — Fofa Benício" loading="lazy">
           <span class="cv-thumb-index">05 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -520,7 +520,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 06 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-06.png" alt="Trailer biomedicina — Tamires Marques" loading="lazy">
+          <img src="Assets/video-06.png" alt="Trailer biomedicina — Tamires Marques" loading="lazy">
           <span class="cv-thumb-index">06 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -535,7 +535,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 07 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-07.png" alt="Trailer de evento — Dra. Paula Palma" loading="lazy">
+          <img src="Assets/video-07.png" alt="Trailer de evento — Dra. Paula Palma" loading="lazy">
           <span class="cv-thumb-index">07 / YOUTUBE</span>
         </div>
         <div class="cv-work-meta">
@@ -550,7 +550,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 08 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-08.png" alt="Videoclipe de encerramento — Dra. Paula Palma" loading="lazy">
+          <img src="Assets/video-08.png" alt="Videoclipe de encerramento — Dra. Paula Palma" loading="lazy">
           <span class="cv-thumb-index">08 / YOUTUBE</span>
         </div>
         <div class="cv-work-meta">
@@ -565,7 +565,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 09 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-09.png" alt="Prova social e autoridade — Dra. Paula Palma" loading="lazy">
+          <img src="Assets/video-09.png" alt="Prova social e autoridade — Dra. Paula Palma" loading="lazy">
           <span class="cv-thumb-index">09 / Instagram</span>
         </div>
         <div class="cv-work-meta">
@@ -580,7 +580,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 10 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-10.png" alt="Consórcios — Casal Investidor" loading="lazy">
+          <img src="Assets/video-10.png" alt="Consórcios — Casal Investidor" loading="lazy">
           <span class="cv-thumb-index">10 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -595,7 +595,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 11 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-11.png" alt="Teaser centro de distribuição SP — Fabreck" loading="lazy">
+          <img src="Assets/video-11.png" alt="Teaser centro de distribuição SP — Fabreck" loading="lazy">
           <span class="cv-thumb-index">11 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -610,7 +610,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 12 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-12.png" alt="Teaser dinâmico stomp music — Fabreck" loading="lazy">
+          <img src="Assets/video-12.png" alt="Teaser dinâmico stomp music — Fabreck" loading="lazy">
           <span class="cv-thumb-index">12 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -625,7 +625,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 13 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-13.png" alt="Dia de produção na fábrica — Fabreck" loading="lazy">
+          <img src="Assets/video-13.png" alt="Dia de produção na fábrica — Fabreck" loading="lazy">
           <span class="cv-thumb-index">13 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -640,7 +640,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 14 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-14.png" alt="Review do ano — Dr. Anderson Kusumoto" loading="lazy">
+          <img src="Assets/video-14.png" alt="Review do ano — Dr. Anderson Kusumoto" loading="lazy">
           <span class="cv-thumb-index">14 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -655,7 +655,7 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <!-- VÍDEO 15 -->
       <article class="cv-work">
         <div class="cv-thumb">
-          <img src="assets/video-15.png" alt="Trailer cirurgia de catarata — Dr. Anderson Kusumoto" loading="lazy">
+          <img src="Assets/video-15.png" alt="Trailer cirurgia de catarata — Dr. Anderson Kusumoto" loading="lazy">
           <span class="cv-thumb-index">15 / INSTAGRAM</span>
         </div>
         <div class="cv-work-meta">
@@ -705,12 +705,12 @@ body{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
    <div style="margin-top:65px" data-app-block-stream-enter="">
     <h3 class="cv-subhead">UMA PRIMEIRA JORNADA DE 90 DIAS.</h3>
     <div class="cv-timeline" data-app-block-stream-enter="">
-     <div><strong>0130 DIAS</strong><p><b>IMERSÃO.</b> Alinhamento de linguagem, conhecimento da fábrica, prioridades do comercial e primeiras entregas.</p></div>
-     <div><strong>3160 DIAS</strong><p><b>CONSISTÊNCIA.</b> Desenvolvimento de séries, banco audiovisual e materiais úteis para arquitetos e equipe comercial.</p></div>
-     <div data-app-block-stream-enter=""><strong>6190 DIAS</strong><p><b>REFINAMENTO.</b> Análise de conteúdos, qualidade dos contatos e ajustes no planejamento.</p></div>
+     <div><strong>01–30 DIAS</strong><p><b>IMERSÃO.</b> Alinhamento de linguagem, conhecimento da fábrica, prioridades do comercial e primeiras entregas.</p></div>
+     <div><strong>31–60 DIAS</strong><p><b>CONSISTÊNCIA.</b> Desenvolvimento de séries, banco audiovisual e materiais úteis para arquitetos e equipe comercial.</p></div>
+     <div data-app-block-stream-enter=""><strong>61–90 DIAS</strong><p><b>REFINAMENTO.</b> Análise de conteúdos, qualidade dos contatos e ajustes no planejamento.</p></div>
     </div>
    </div>
-   <div class="cv-statement" style="margin-bottom:0" data-app-block-stream-enter="">O VALOR DA CAVEZZO COMEÇA A SER CONSTRUÍDO ANTES DA VISITA AO SHOWROOM.</span></div>
+   <div class="cv-statement" style="margin-bottom:0" data-app-block-stream-enter="">O VALOR DA CAVEZZO COMEÇA A SER CONSTRUÍDO ANTES DA VISITA AO SHOWROOM.</div>
   </div>
  </section>
 
