@@ -13,8 +13,9 @@ body{background-color:#050505}
 .report-hero{min-height:84vh;padding:185px 0 90px;border-bottom:1px solid var(--hair);position:relative;overflow:hidden}
 .report-hero::after{content:"";position:absolute;right:-14vw;top:22%;width:45vw;height:45vw;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 6vw rgba(255,255,255,.018),0 0 0 12vw rgba(255,255,255,.013);pointer-events:none}
 .report-hero .eyebrow{font-size:.75rem;color:#bbb}
-.report-hero h1{font-size:clamp(4.3rem,9.8vw,11rem);max-width:1050px;letter-spacing:0em;line-height:1;margin:34px 0}
-.report-hero h1 span{color:transparent;-webkit-text-stroke:1.5px #eee}
+.report-hero h1{font-size:clamp(3.25rem,8vw,8.2rem);max-width:1050px;letter-spacing:-.025em;line-height:1.02;margin:34px 0;overflow-wrap:break-word}
+.report-hero h1>span:not(.report-hero-period){color:transparent;-webkit-text-stroke:1.5px #eee}
+.report-hero h1 .report-hero-period{display:block;color:#aaa;font-family:"Geomanist",Arial,sans-serif;font-weight:400;font-size:clamp(.95rem,1.65vw,1.4rem);letter-spacing:.12em;line-height:1.5;margin-top:22px;-webkit-text-stroke:0}
 .report-hero .lead{font-size:clamp(1.1rem,1.9vw,1.65rem);max-width:680px;color:#aaa;line-height:1.45}
 .hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:100px;border-top:1px solid var(--hair);padding-top:18px;color:#999;font-size:.8rem}
 .report section.report-section{padding:95px 0;border-bottom:1px solid var(--hair)}
@@ -61,7 +62,7 @@ body{background-color:#050505}
 .report-footer{border-top:1px solid var(--hair);padding:35px 0 55px;display:flex;justify-content:space-between;color:#858585;font-size:.8rem}
 .report a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 @media(max-width:900px){.report .metric-grid{grid-template-columns:repeat(2,1fr)}.report .metric:nth-child(2){border-right:0}.report .metric:nth-child(-n+2){border-bottom:1px solid var(--hair)}.report .pair{grid-template-columns:1fr}.report section.report-section{padding:70px 0}.report-hero{padding-top:140px;min-height:72vh}}
-@media(max-width:600px){.report .shell{width:calc(100% - 32px)}.report-hero h1{font-size:clamp(3.7rem,15vw,6rem)}.report-hero{padding-bottom:55px}.report .metric{padding:24px 8px!important}.report .metric strong{font-size:clamp(1.8rem,6vw,2.8rem);white-space:normal}.report .metric span{font-size:.61rem}.report .panel{padding:23px}.report .bottom-cta,.hero-bottom{align-items:flex-start;flex-direction:column}.report .meter-row{grid-template-columns:76px 1fr 70px;gap:8px}.report .meter-row span,.report .meter-row b{font-size:.74rem}}
+@media(max-width:600px){.report-hero h1{font-size:clamp(2.8rem,11.5vw,4.6rem)}.report .shell{width:calc(100% - 32px)}.report-hero{padding-bottom:55px}.report .metric{padding:24px 8px!important}.report .metric strong{font-size:clamp(1.8rem,6vw,2.8rem);white-space:normal}.report .metric span{font-size:.61rem}.report .panel{padding:23px}.report .bottom-cta,.hero-bottom{align-items:flex-start;flex-direction:column}.report .meter-row{grid-template-columns:76px 1fr 70px;gap:8px}.report .meter-row span,.report .meter-row b{font-size:.74rem}}
 @media print{body{background:#050505!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.site-header{position:relative;width:100%;left:auto;transform:none}.report-hero{min-height:0}.report section.report-section{padding:30px 0;break-inside:auto}.report .pair,.report .metric-grid{break-inside:avoid}.report .table-wrap{overflow:visible}.report table{font-size:.65rem}.report th,.report td{padding:6px}}
 </style></head>
 <body data-page="report-lis"><header class="site-header" data-header>
@@ -71,7 +72,7 @@ body{background-color:#050505}
 </header>
 <main class="report">
 <section class="report-hero"><div class="shell"><p class="eyebrow">LosBuenos / Performance / Lis Semijoias</p>
-<h1>Relatório de campanhas - Lis Concept - AGO-SET-OUT-26.</h1>
+<h1>Relatório de<br><span>campanhas.</span><br>Lis Concept<span class="report-hero-period"> · AGO / SET / OUT 2026</span></h1>
 <p class="lead">Resultados reais das campanhas Meta Ads de agosto, setembro e outubro de 2026. Crescimento de audiência e divulgação de lives analisados separadamente, com decisões práticas para os próximos ciclos.</p>
 <div class="hero-bottom"><span>01 AGO — 31 OUT 2026</span><span>RELATÓRIO TRIMESTRAL · CONTA LIS SEMIJOIAS</span></div></div></section>
 <div class="shell"><nav class="subnav" aria-label="Seções do relatório"><a href="#visao">Visão geral</a><a href="#crescimento">Crescimento</a><a href="#lives">Lives</a><a href="#criativos">Criativos</a><a href="#plano">Plano de ação</a><a href="#detalhamento">Campanhas</a></nav></div>
