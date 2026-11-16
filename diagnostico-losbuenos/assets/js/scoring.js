@@ -1,0 +1,2 @@
+LB.answerScore=(q,a)=>{if(a===undefined)return null;if(q.type==='slider')return Number(a)*10;if(q.type==='single')return q.options.find(o=>o.value===a)?.score??0;return a.includes(q.exclusive)?100:Math.max(0,100-a.length*100/q.exclusive);};
+LB.scores=answers=>LB.pillars.map((name,p)=>{const qs=LB.questions.filter(q=>q.p===p);const complete=qs.every(q=>answers[q.id]!==undefined);return {name,p,score:complete?Math.round(qs.reduce((n,q)=>n+LB.answerScore(q,answers[q.id]),0)/qs.length):null};});
