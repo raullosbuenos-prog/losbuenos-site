@@ -15,3 +15,4 @@ PDF: html2pdf.js 0.10.1 com dependências empacotadas localmente, integridade SH
 Validação: fluxo completo em Edge; campos e aceite obrigatórios; falha e receptor antigo bloqueiam ações; confirmação libera ações; correção exige nova confirmação; download PDF real e inspeção visual; layout de 390px sem overflow. Receptor testado localmente com migração preservando linhas antigas, validação de contato e deduplicação. Teste real de contatos pendente da atualização do Apps Script.
 
 Perguntas, produtos e pesos comerciais são preliminares, conforme a V0.1. Separação: questions.js, products.js, rules.js, scoring.js, recommendations.js, app.js, sharing.js, config.js e CSS próprio.
+Abertura direta via file://: o botão PDF usa a impressão do navegador; escolha Salvar como PDF. Publicado via HTTP/HTTPS, gera download direto. Ambos os caminhos foram verificados.
