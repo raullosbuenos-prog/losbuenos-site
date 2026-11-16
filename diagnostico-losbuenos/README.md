@@ -12,7 +12,7 @@ As requisições devem ser confirmadas no navegador, sem no-cors ou sucesso pres
 
 PDF: html2pdf.js 0.10.1 com dependências empacotadas localmente, integridade SHA-512 verificada na obtenção. Gera um PDF de página contínua com o resultado e os contatos; não envia o PDF a terceiros. A logo PNG usada no PDF é uma renderização do SVG original. Referência da biblioteca: https://ekoopmans.github.io/html2pdf.js/
 
-Validação: fluxo completo em Edge; campos e aceite obrigatórios; falha e receptor antigo bloqueiam ações; confirmação libera ações; correção exige nova confirmação; download PDF real e inspeção visual; layout de 390px sem overflow. Receptor testado localmente com migração preservando linhas antigas, validação de contato e deduplicação. Teste real de contatos pendente da atualização do Apps Script.
+Validação: fluxo completo em Edge; campos e aceite obrigatórios; falha e receptor antigo bloqueiam ações; confirmação libera ações; correção exige nova confirmação; download PDF real e inspeção visual; layout de 390px sem overflow. Receptor testado localmente com migração preservando linhas antigas, validação de contato e deduplicação. Teste real de contatos aprovado em 16/11/2026: receptor confirmou contactSaved:true e o navegador liberou PDF e WhatsApp. Registro fictício identificado como TESTE AUTOMATICO LOSBUENOS / 0.3-TESTE.
 
 Perguntas, produtos e pesos comerciais são preliminares, conforme a V0.1. Separação: questions.js, products.js, rules.js, scoring.js, recommendations.js, app.js, sharing.js, config.js e CSS próprio.
 Abertura direta via file://: o botão PDF usa a impressão do navegador; escolha Salvar como PDF. Publicado via HTTP/HTTPS, gera download direto. Ambos os caminhos foram verificados.
