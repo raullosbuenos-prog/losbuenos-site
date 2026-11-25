@@ -4,8 +4,8 @@
     display:block;
     width:100%;
     aspect-ratio:16/10;
-    object-fit:cover;
-    object-position:center top; /* mantém a cabeça visível */
+    object-fit:cover !important;
+    object-position:center 0% !important;
     background:#f0f0ed;
     filter:grayscale(1);
 }
